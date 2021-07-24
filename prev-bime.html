@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-bime.css">
+    <title>  بیمه شخص ثالث برند</title>
+    <style>
+        .card {
+            width: 113px;
+            margin: 7px 0px;
+        }
+        .hide {
+            display: none;
+        }
+    </style>
+</head> 
+<body>
+    <header >
+        <div class="header-primary">
+            <ul class="header-list">
+                <li> <a href="#">قوانین و مقررات  </a></li>
+                <li> <a href="#"> درباره ی ما</a></li>
+                <li> <a href="#"> همکاری با ما</a></li>
+                <li> <a href="#"> تماس با ما</a></li>
+            </ul>
+        </div>
+    </header>
+    <nav class="nav__cont">
+        <ul class="nav">
+          <li class="nav__items">
+            <a href="home.html">
+                <img class="nav__img" src="img/nav-item-1.svg" alt="nav icon">
+            </a>
+          </li>
+          <li class="nav__items">
+            <a href="home.html">
+                <img class="nav__img" src="img/nav-item-2.svg" alt="nav icon">
+            </a>
+          </li>
+          <li class="nav__items">
+            <a href="home.html">
+                <img class="nav__img" src="img/nav-item-3.svg" alt="nav icon">
+            </a>
+          </li>
+
+          <li class="nav__items">
+            <a href="home.html">
+                <img class="nav__img" src="img/nav-item-4.svg" alt="nav icon">
+            </a>
+          </li>
+
+          <li class="nav__items">
+            <a href="home.html">
+                <img class="nav__img" src="img/nav-item-5.svg" alt="nav icon">
+            </a>
+          </li>
+        </ul>
+    </nav>
+    <main class="main-section">
+        <div class="header-secondary">
+            <div>
+                <ul class="header-secondary-list">
+                    <li><a href="home.html"> <img src="img/logo1.png" alt="logo" class="logo"> </a></li>
+                    <li> <a href="home.html"> خانه </a></li>
+                    <li> <a href="#"> انواع بیمه نامه</a></li>
+                    <li> <a href="#"> شرکت های بیمه</a></li>
+                    <li> <a href="#"> بلاگ</a></li>
+                </ul>
+            </div>
+            <div>
+                <button class="btn-g draw-border">بیمه های من</button>
+            </div>
+        </div>
+        <section class="sec-prev-bime">
+            <div class="sec-prev-bime-content">
+                <div class="sec-prev-bime-item1">
+                    <div class="car-prev-bime-header ">
+                        <div class="h2-prev-bime">
+                            <h2 >وضعیت بیمه نامه قبلی را انتخاب کنید</h2>
+                        </div>
+                        <div class="search-box"  style="display: none;" >
+                            <input type="text" id="filter-box" placeholder="شرکت بیمه گزار...">
+                            <button> <img class="search-icon" src="img/icons-search.svg" alt="search icon"></button>
+                        </div>
+                    </div>
+                    
+                    <div class="car-prev-bime-main">
+                        <form action="#" class="prev-bime-form">
+                            <div class="form__radio-group">
+                                <input type="radio" onchange="showSection()" class="form__radio-input" id="item1" name="item">
+                                <label for="item1" class="form__radio-label">
+                                    <span class="form__radio-button"></span>
+                                    بیمه ندارد
+                                    
+                                </label>
+                            </div>
+    
+                            <div class="form__radio-group">
+                                <input type="radio" onchange="showSection()" class="form__radio-input" id="item2" name="item">
+                                <label for="item2" class="form__radio-label">
+                                    <span class="form__radio-button"></span> 
+                                    <span>بیمه دارد</span>
+                                    <hr class="vertical-line-prev">
+                                    <span> به نام مالک فعلی</span>
+                                </label>
+                            </div>
+                            <div class="form__radio-group">
+                                <input type="radio" onchange="showSection()" class="form__radio-input radio-input-3" id="item3" name="item">
+                                <label for="item3" class="form__radio-label">
+                                    <span class="form__radio-button"></span>
+                                    <span>بیمه دارد</span>
+                                    <hr class="vertical-line-prev">
+                                    <span> به نام دیگری (تغییر مالکیت) </span>
+                                    
+                                </label>
+                            </div>
+                        </form>
+                        <div class="car-prev-bime" style="display: none;">
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car" >
+                                    <div class="card-pic">
+                                        <img src="img/021-car-17.svg" alt="بیمه زلزله">
+                                    </div>
+                                    <h3>بیمه دانا</h3>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car">
+                                    <div class="card-pic">
+                                        <img src="img/047-cabriolet-1.svg" alt="بیمه عمر">
+                                    </div>
+                                    <h3>بیمه ایران</h3>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car">
+                                    <div class="card-pic">
+                                        <img src="img/Group2407.svg" alt="بیمه مسافرتی">
+                                    </div>
+                                    <h3>بیمه دی</h3>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car">
+                                    <div class="card-pic">
+                                        <img src="img/021-car-17.svg" alt="بیمه زلزله">
+                                    </div>
+                                    <h3>بیمه دانا</h3>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car">
+                                    <div class="card-pic">
+                                        <img src="img/047-cabriolet-1.svg" alt="بیمه عمر">
+                                    </div>
+                                    <h3>بیمه ایران</h3>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car">
+                                    <div class="card-pic">
+                                        <img src="img/Group2407.svg" alt="بیمه مسافرتی">
+                                    </div>
+                                    <h3>بیمه دی</h3>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car">
+                                    <div class="card-pic">
+                                        <img src="img/021-car-17.svg" alt="بیمه زلزله">
+                                    </div>
+                                    <h3>بیمه دانا</h3>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car">
+                                    <div class="card-pic">
+                                        <img src="img/047-cabriolet-1.svg" alt="بیمه عمر">
+                                    </div>
+                                    <h3>بیمه ایران</h3>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car">
+                                    <div class="card-pic">
+                                        <img src="img/Group2407.svg" alt="بیمه مسافرتی">
+                                    </div>
+                                    <h3>بیمه دی</h3>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car">
+                                    <div class="card-pic">
+                                        <img src="img/021-car-17.svg" alt="بیمه زلزله">
+                                    </div>
+                                    <h3>بیمه دانا</h3>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car">
+                                    <div class="card-pic">
+                                        <img src="img/047-cabriolet-1.svg" alt="بیمه عمر">
+                                    </div>
+                                    <h3>بیمه ایران</h3>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car">
+                                    <div class="card-pic">
+                                        <img src="img/Group2407.svg" alt="بیمه مسافرتی">
+                                    </div>
+                                    <h3>بیمه دی</h3>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car">
+                                    <div class="card-pic">
+                                        <img src="img/021-car-17.svg" alt="بیمه زلزله">
+                                    </div>
+                                    <h3>بیمه دانا</h3>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car">
+                                    <div class="card-pic">
+                                        <img src="img/047-cabriolet-1.svg" alt="بیمه عمر">
+                                    </div>
+                                    <h3>بیمه ایران</h3>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car">
+                                    <div class="card-pic">
+                                        <img src="img/Group2407.svg" alt="بیمه مسافرتی">
+                                    </div>
+                                    <h3>بیمه دی</h3>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car">
+                                    <div class="card-pic">
+                                        <img src="img/021-car-17.svg" alt="بیمه زلزله">
+                                    </div>
+                                    <h3>بیمه دانا</h3>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car">
+                                    <div class="card-pic">
+                                        <img src="img/047-cabriolet-1.svg" alt="بیمه عمر">
+                                    </div>
+                                    <h3>بیمه ایران</h3>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car">
+                                    <div class="card-pic">
+                                        <img src="img/Group2407.svg" alt="بیمه مسافرتی">
+                                    </div>
+                                    <h3>بیمه دی</h3>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car">
+                                    <div class="card-pic">
+                                        <img src="img/021-car-17.svg" alt="بیمه زلزله">
+                                    </div>
+                                    <h3>بیمه دانا</h3>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car">
+                                    <div class="card-pic">
+                                        <img src="img/047-cabriolet-1.svg" alt="بیمه عمر">
+                                    </div>
+                                    <h3>بیمه ایران</h3>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="prev-info.html" class="selected-car">
+                                    <div class="card-pic">
+                                        <img src="img/Group2407.svg" alt="بیمه مسافرتی">
+                                    </div>
+                                    <h3>بیمه دی</h3>
+                                </a>
+                            </div>
+                            
+                            
+
+                        </div>
+                        
+                    </div>
+    
+                </div>
+                <div class="selection" > 
+                    <div class="img-selection">
+                        <div class="img1"> <img src="img/car.svg" alt="car icon"></div>
+                    </div>
+                    <h2 class="h2-selection"> بیمه شخص ثالث </h2> 
+
+                    <div class="btn-selection">
+                        <button id="selected-type-btn" >نوع وسیله</button>
+                        <button id="selected-brand-btn">برند</button>
+                    </div>
+    
+                    <div class="btn-selection">
+                        <button id="selected-model-btn">مدل</button>
+                        <button id="selected-year-btn" >سال ساخت</button>
+                    </div>
+
+                    <div class="progress-bar">
+                       <img src="img/Group 2410@2X.png" >
+                    </div>
+                    <div class="btn-pagination">
+                        <button> <span>&#10094;  </span>  <a href="model.html"> مرحله قبل </a> </button>
+                        <button> <a href="prev-info.html"> مرحله بعد</a> <span> &#10095;</span> </button>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer >
+        <div class="footer">
+            <div class="footer-col1">
+                <div><a href="#"> <img src="img/logo1.png" alt="logo" class="logo"> </a></div>
+                <div>
+                    <img src="img/Iconly-Bold-Location.svg" alt="location icon">
+                    <span>انواع بیمه ها انواع بیمه ها  انواع بیمه ها انواع بیمه ها انواع بیمه ها </span>
+                </div>
+                <div>
+                    <img src="img/Iconly-Bold-Calling.svg" alt="phone icon">
+                    <span>021-99887766   021-998877666   021-99887766 </span>
+                </div>
+                <div>
+                    <img src="img/Iconly-Bold-Message.svg" alt="email icon">
+                    <span> rayabime@gmail.com </span>
+                </div>
+                <div>
+                    <img src="img/Group46.svg" alt="app icon">
+                </div>
+    
+            </div>
+            <div class="footer-col2">
+                <h4>دسترسی سریع</h4>
+                <div >
+                    <div class="footer-col2-column">
+                        <ul>
+                            <li>بیمه شخص ثالث</li>
+                            <li> بیمه بدنه</li>
+                            <li> بیمه تکمیلی</li>
+                            <li> بیمه آتش سوزی</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col2-column">
+                        <ul>
+                            <li> بیمه زلزله</li>
+                            <li> بیمه عمر</li>
+                            <li> بیمه مسافرتی</li>
+                            <li> بیمه سازمانی</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col2">
+                <h4>پیوند ها</h4>
+                <div >
+                    <div class="footer-col2-column">
+                        <ul>
+                            <li>مقام معظم رهبری</li>
+                            <li> ریاست جمهوری</li>
+                            <li> گروه خودروسازان سایپا</li>
+                            <li> بیمه مرکزی</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col2-column">
+                        <ul>
+                            <li> پژوهشکده بیمه</li>
+                            <li> سندیکای بیمه گران</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        function showSection() {
+            var item3 = document.querySelector(".radio-input-3").checked;
+            var prev = document.querySelector(".car-prev-bime");
+            var searchBox = document.querySelector(".search-box");
+            if( item3 ) {
+                prev.style.display = "flex" ;
+                searchBox.style.display = "block" ;
+            }else {
+                prev.style.display = "none" ;
+                searchBox.style.display = "none" ;
+            }
+        }
+
+
+
+        //js for searchbox filter items:
+            document.querySelector("#filter-box").addEventListener("keyup", function(){
+                var search = this.value;
+                var all = document.querySelectorAll(".selected-car h3");
+                for (let i of all) {
+                    let item = i.innerHTML;
+                    if (item.indexOf(search) == -1) { i.parentElement.parentElement.classList.add("hide"); }
+                    else { i.parentElement.parentElement.classList.remove("hide"); }
+                }
+            });
+
+
+        //js for selection prev buttons:
+        var typeBtnPrev = sessionStorage.getItem("typeBtnContent");
+        var Btn1 = document.querySelector('#selected-type-btn');
+        Btn1.innerHTML = typeBtnPrev ;
+        Btn1.classList.add("selected-item");
+
+        var brandBtnPrev = sessionStorage.getItem("brandBtnContent");
+        var Btn2 = document.querySelector('#selected-brand-btn');
+        Btn2.innerHTML = brandBtnPrev ;
+        Btn2.classList.add("selected-item");
+
+        var modelBtnPrev = sessionStorage.getItem("modelBtnContent");
+        var Btn3 = document.querySelector('#selected-model-btn');
+        Btn3.innerHTML = modelBtnPrev ;
+        Btn3.classList.add("selected-item");
+
+        var yearBtnPrev = sessionStorage.getItem("yearBtnContent");
+        var Btn4 = document.querySelector('#selected-year-btn');
+        Btn4.innerHTML = yearBtnPrev ;
+        Btn4.classList.add("selected-item");
+        //end
+
+    </script>
+</body>
+</html>
