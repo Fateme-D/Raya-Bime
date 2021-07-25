@@ -1,0 +1,52 @@
+.card-home {
+    display: inline-block;
+    width: 135px;
+    height: 145px;
+    box-shadow: 4px 4px 12px 0 #b7b5b280 , -4px -4px 12px 0 #fcf7f780;
+    padding: 15px 5px;
+    border-radius: 10px;
+    margin: 15px 8px;
+    cursor: pointer;
+    transition: all .4s;
+    &:hover {
+        background-color: #e0effc;
+        transform: translateY(-4px) scale(1.03);
+        transition: all .4s;
+        & h3 {
+            color: #2b85d3;
+            transform: scale(1.07);
+        }
+        & img {
+            width: 66px;
+            height: 60px;
+            position: absolute;
+            right: calc(50% - 33px);
+            top: calc(50% - 30px);
+            transition: all 0.2s linear;
+        }
+    }
+    & h3 {
+        color: #777;
+        font-size: 12px;
+        font-family: inherit;
+        text-align: center;
+        transition: transform 0.2s;
+    }
+    &-pic {
+        background-color: #e0effc;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: relative;
+        margin: 0 auto;
+        & img {
+            width: 60px;
+            height: 50px;
+            position: absolute;
+            right: calc(50% - 32px);
+            top: calc(50% - 25px);
+            transition: all 0.2s linear;
+        }
+    }
+}
+

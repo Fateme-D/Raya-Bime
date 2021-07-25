@@ -116,12 +116,12 @@ img {
 .header-primary {
     padding: 8px 0px;
 }
-.header-list {
+.header-primary-list {
     background-color: #4ebfe7;
     display: flex;
     justify-content: center;
 }
-.header-list li {
+.header-primary-list li {
     list-style-type: none;
     display: inline-block;
     margin: 5px 10px;
@@ -131,11 +131,12 @@ img {
     border: 2px solid transparent;
     transition: all .5s ease;
 }
-.header-list li:hover {
+.header-primary-list li:hover {
     border: 2px solid #f1f1f1;
     border-radius: 5px;
     transition: all .5s ease;
 }
+
 .main-section {
     margin-top: -28px;
     border-bottom: 18px solid #e4e4e4;
@@ -182,8 +183,6 @@ img {
     right: auto;
     width: 100%;
 }
-/*end*/
-
 .header-secondary-list {
     display: flex;
     flex-direction: row;
@@ -191,6 +190,9 @@ img {
     align-items: center;
     padding-right: 0px;
 }
+/*end*/
+
+
 .logo {
     width: 150px;
     height: auto;
@@ -238,19 +240,7 @@ img {
 .draw-border:hover::after {
     transition-delay: 0s, 0.25s, 0s;
 }
-.btn-g {
-    background: none;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 6px 19px;  
-    font-size: 14px;
-    font-family: 'IRANSans', 'yekan2';
-    font-weight: 500;
-}
-.btn-g:focus {
-    outline: 2px dotted #55d7dc;
-}
+
 
 
 /*nav style*/
@@ -354,17 +344,17 @@ img {
 }
 
 */
-.sec1 {
+.sec-home {
     display: flex;
     width: 90%;
     margin: 0 auto;
     justify-content: space-evenly;
 }
-.bime-sec {
+.sec-home-1 {
     width: 650px;
     height: 500px;
 }
-.slide-show {
+.sec-home-2{
     width: 340px;
     height: 500px;
 }
@@ -417,7 +407,7 @@ img {
 }
 /*end slideshow*/
 
-.bime-sec > h1{
+.bime-sec > h1 {
     color: #41c3f1;
     padding: 0px 15px;
     font-size: 40px;
@@ -435,7 +425,7 @@ img {
     margin: 0px;
 }
 
-.card-pic {
+.card-home-pic {
     background-color: #e0effc;
     width: 80px;
     height: 80px;
@@ -443,7 +433,7 @@ img {
     position: relative;
     margin: 0 auto;
 }
-.card-pic img {
+.card-home-pic img {
     width: 60px;
     height: 50px;
     position: absolute;
@@ -451,7 +441,7 @@ img {
     top: calc(50% - 25px);
     transition: all 0.2s linear;
 }
-.card {
+.card-home {
     display: inline-block;
     width: 120px;
     height: 150px;
@@ -463,13 +453,13 @@ img {
     transition: all .4s;
     
 }
-.card:hover {
+.card-home:hover {
     background-color: #e0effc;
     transform: translateY(-4px) scale(1.03);
     transition: all .4s;
 }
 
-.card h3 {
+.card-home h3 {
     color: #777;
     font-size: 12px;
     font-family: inherit;
@@ -477,11 +467,11 @@ img {
     transition: transform 0.2s;
 }
 
-.card:hover h3 {
+.card-home:hover h3 {
     color: #2b85d3;
     transform: scale(1.07);
 }
-.card:hover img {
+.card-home:hover img {
     width: 66px;
     height: 60px;
     position: absolute;

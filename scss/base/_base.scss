@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    //this defines what 1rem is
+    font-size: 10px; //1rem=10px;
+    // font-size: 62.5%;   //1rem=10px;  10px/16px=62.5%
+    
+   /* @media (max-width: 600px) {
+        font-size: 50%;
+    }*/
+
+
+    /*@include respond(phone) {
+        font-size: 50%;
+    }
+    */
+
+    /*
+    @include respond(tab-land) { //width < 1200
+        font-size: 56.25%;     //1rem=8px;   8px/16px=56.5%
+    }
+
+    @include respond(tab-port) { //width < 900  (then if width=500 this media query applyed becouse order code wite hhh)
+        font-size: 50%;     //1rem=8px, 8/16=50%
+    }
+
+    @include respond(phone) { 
+        font-size: 30%;     //1rem=4.8
+    }
+
+    @include respond(big-desktop) {
+        font-size:75%;      //1rem=12,  12/16=75%
+    }
+    */
+
+    //Note: Always the large media query before the smaller media query
+}
+
+
+body {
+    box-sizing: border-box;
+    font-family: $font-family ;
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    margin-top: -2rem;
+
+
+    // @include respond(tab-port) {
+    //     padding: 0;
+    // }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+// ::selection {
+//     background-color: $color-primary;
+//     color: $color-white;
+// }
+
+
+
+::-webkit-scrollbar {
+    width:50px;
+    background-color:#cedbe8;
+}
+
+::-webkit-scrollbar {
+    width: 11px;
+    background-color: #F5F5F5;
+} 
+::-webkit-scrollbar-thumb {
+    background-color: #a4a4a4;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: #e5e5e5fc;
+}
+
+
+
+
+.main-section {
+    margin-top: -28px;
+    border-bottom: 18px solid #e4e4e4;
+    padding-bottom: 70px;
+}
