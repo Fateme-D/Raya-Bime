@@ -1,0 +1,118 @@
+@mixin bime-box {
+    padding: 1.5rem 3rem;
+    background-image: url(../img/bg1.jpg); 
+    background-size: contain;
+    width: 100%;
+    align-items: stretch;  
+    justify-content: center;
+    height: 95vh;  
+}
+
+@mixin bime-first-col {
+    border: .15rem solid $color-blue;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    background: linear-gradient( 145deg , #f7f7f7a6 0%, #f3f3f3f5 100%);
+    backdrop-filter: blur(.3rem);
+    margin-left: 2.5rem;
+    height: 41rem;
+    width: 65rem;
+}
+
+@mixin bime-first-col-h2 {
+    font-family: $font-family;
+    color: $color-grey-dark-1;
+    font-size: 1.6rem;
+    font-weight: 800;
+    border-bottom: .3rem solid $color-primary-light;
+    padding: .5rem;
+}
+
+// @mixin bime-first-col-h2 {
+//     background: linear-gradient( 145deg, #f7f7f7a6 0%, #f3f3f3f5 100%);
+//     backdrop-filter: blur(.3rem);
+// }
+
+
+/*
+@mixin clearfix {
+    &:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+//into your style block:  @include absCenter; 
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//MEDIA QUERY MANAGER
+/*
+0 - 600px:       phone                            max-with
+600-900px:       Tablet protrait                  max-with
+900-1200px:      Tablet landscape                 max-with
+[1200-1800px]:   is where our normal styles apply
+1800px + :       Big desktop                      min-with
+
+*/
+
+
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+*/
+
+
+/*
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media(max-width: 600px){ @content};
+    }
+
+    @if $breakpoint == tab-port {
+        @media(max-width: 900px){ @content};
+    }
+
+    @if $breakpoint == tab-land {
+        @media(max-width: 1200px){ @content};
+    }
+
+    @if $breakpoint == big-desktop {
+        @media(min-width: 1800px){ @content};
+    }
+}
+*/
+
+
+/*
+//OREDER: Base + Typography > general layout + grid > page layout > components
+
+//1em = 16px so for example 600px/16=37.5em
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media(max-width: 37.5em){ @content};  //max-width:600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media(max-width: 56.25em){ @content};   //max-width:900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media(max-width: 75em){ @content};  //max-width:1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media(min-width: 112.5em){ @content};   //1800px 
+    }
+}
+
+*/

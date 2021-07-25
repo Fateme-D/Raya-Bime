@@ -5,26 +5,26 @@
     justify-content: space-evenly;
 }
 .sec-home-1 {
-    width: 650px;
-    height: 500px;
+    width: 65rem;
+    height: 50rem;
     & > h1{
-        color: #41c3f1;
-        padding: 0px 15px;
-        font-size: 40px;
+        color: $color-blue;
+        padding: 0 1.5rem;
+        font-size: 4rem;
         font-weight: 600;
-        font-family: inherit;
-        margin: 0px;
+        font-family: $font-family;
+        margin: 0;
     }
     & > h2 {
-        color: #ce8b35;
-        padding: 10px 15px;
-        font-size: 18px;
-        font-family: inherit;
+        color: $color-primary;
+        padding: 1rem 1.5rem;
+        font-size: 1.8rem;
+        font-family: $font-family;
         font-weight: 600;
-        margin: 0px;
+        margin: 0;
     }
 }
 .sec-home-2{
-    width: 340px;
-    height: 500px;
+    width: 34rem;
+    height: 50rem;
 }

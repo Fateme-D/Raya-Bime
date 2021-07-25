@@ -1,0 +1,88 @@
+.form_h3{
+    font-size: 2.2rem;
+    font-family: $font-family;
+    color: $color-grey-dark-2;
+    font-weight: 800;
+    margin: 0 1rem 1rem 0;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.form_input {
+    outline: none;
+    background-color: #ebebeb85;
+    padding: 1rem 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $color-grey-dark-2;
+    font-family: $font-family;
+    width: 23rem;
+    border: 0;
+    border-radius: .7rem;
+    border-bottom: .3rem solid transparent;
+    transition: all .2s;
+    &:focus {
+        outline: none;
+        border-bottom: .3rem solid #55c57a;
+        border-radius: .7rem .7rem .3rem .3rem;
+        transition: all .2s;
+        box-shadow: .1rem .1rem .7rem 0 #b7b5b280;
+        background-color: #fafafa;
+    }
+    &::placeholder {
+        color: #aaaaaa;
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+}
+
+.form_label {
+    font-size: 1.2rem;
+    font-family: $font-family;
+    color: $color-grey-dark-1;
+    margin-right: .9rem;
+    margin-bottom: .2rem;
+}
+
+.form_textarea {
+    background-color: #ebebeb85;
+    padding: 1rem 1.2rem;
+    font-family: $font-family;
+    border: 0;
+    border-radius: .7rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    outline: none;
+    color: #686868;
+    border-bottom: .3rem solid transparent;
+    &::placeholder {
+        color: #aaaaaa;
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+    &:focus {
+        outline: none;
+        border-bottom: .3rem solid #55c57a;
+        border-radius: .7rem .7rem .3rem .3rem;
+        transition: all .2s;
+        box-shadow: .1rem .1rem .7rem 0 #b7b5b280;
+        background-color: #fafafa;
+    }
+}
+
+.form_submit > button {
+    margin: 1rem 0;
+    background-color: $color-blue-dark;
+    color: $color-white;
+    padding: .7rem 1rem;
+    border-radius: .5rem;
+    border: 0;
+    font-size: 1.4rem;
+    font-family: $font-family;
+    width: 23rem;
+}
+
