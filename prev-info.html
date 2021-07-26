@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-bime.css">
+    <link rel="stylesheet" href="css/main.min.css">
     <link type="text/css" rel="stylesheet" href="css/jalalidatepicker.css" />
     <title>  بیمه شخص ثالث برند</title>
 </head> 
 <body>
     <header >
         <div class="header-primary">
-            <ul class="header-list">
+            <ul class="header-primary-list">
                 <li> <a href="#">قوانین و مقررات  </a></li>
                 <li> <a href="#"> درباره ی ما</a></li>
                 <li> <a href="#"> همکاری با ما</a></li>
@@ -21,34 +21,34 @@
     </header>
     <nav class="nav__cont">
         <ul class="nav">
-          <li class="nav__items">
-            <a href="home.html">
-                <img class="nav__img" src="img/nav-item-1.svg" alt="nav icon">
-            </a>
-          </li>
-          <li class="nav__items">
-            <a href="home.html">
-                <img class="nav__img" src="img/nav-item-2.svg" alt="nav icon">
-            </a>
-          </li>
-          <li class="nav__items">
-            <a href="home.html">
-                <img class="nav__img" src="img/nav-item-3.svg" alt="nav icon">
-            </a>
-          </li>
-
-          <li class="nav__items">
-            <a href="home.html">
-                <img class="nav__img" src="img/nav-item-4.svg" alt="nav icon">
-            </a>
-          </li>
-
-          <li class="nav__items">
-            <a href="home.html">
-                <img class="nav__img" src="img/nav-item-5.svg" alt="nav icon">
-            </a>
-          </li>
-        </ul>
+            <li class="nav__items">
+              <a href="home.html">
+                  <img class="nav__img" src="img/nav-item-1.svg" alt="nav icon">
+              </a>
+            </li>
+            <li class="nav__items">
+              <a href="home.html">
+                  <img class="nav__img" src="img/nav-item-2.svg" alt="nav icon">
+              </a>
+            </li>
+            <li class="nav__items">
+              <a href="home.html">
+                  <img class="nav__img" src="img/nav-item-3.svg" alt="nav icon">
+              </a>
+            </li>
+  
+            <li class="nav__items">
+              <a href="home.html">
+                  <img class="nav__img" src="img/nav-item-4.svg" alt="nav icon">
+              </a>
+            </li>
+  
+            <li class="nav__items">
+              <a href="home.html">
+                  <img class="nav__img" src="img/nav-item-5.svg" alt="nav icon">
+              </a>
+            </li>
+          </ul>
     </nav>
     <main class="main-section">
         <div class="header-secondary">
@@ -61,89 +61,88 @@
                     <li> <a href="#"> بلاگ</a></li>
                 </ul>
             </div>
-            <div>
+            <div style="display: none;">
                 <button class="btn-g draw-border">بیمه های من</button>
             </div>
         </div>
         <section class="sec-prev-info">
-            <div class="sec-prev-info-content">
-                <div class="sec-prev-info-item1">
-                    <div class="car-prev-info-header">
-                        <div class="h2-prev-info">
-                            <h2 >تاریخ اعتبار و درصد تخفیف بیمه نامه قبلی خود را انتخاب کنید</h2>
-                        </div>
-                    </div>
-                    
-                    <div class="car-prev-info-main">
-                        <form action="#" class="prev-info-form">
-                            <div class="prev-info-item" >
-                                <div class="form-group-prev-info">
-                                    <label for="item1" class="car-form_label"> تاریخ شروع بیمه نامه</label>
-                                    <input  data-jdp  type="text" id="item1"  placeholder="تاریخ انقضای بیمه نامه" required>
-                                </div>
-                            </div>
-
-                            <div class="prev-info-item">
-                                <div class="form-group-prev-info">
-                                    <label for="item2" class="car-form_label"> تاریخ انقضای بیمه نامه</label>
-                                    <input type="text" id="item2" placeholder="تاریخ انقضای بیمه نامه" disabled>
-                                </div>
-                            </div> 
-                            <div class="prev-info-item" >
-                                <div class="form-group-prev-info">
-                                    <label for="off1" class="car-form_label"> تخفیف شخص ثالث</label>
-                                    <div class="input-group">
-                                        <input type="text" id="off1" placeholder="تخفیف شخص ثالث " >
-                                        <button> <a href="#">راهنما </a> </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="prev-info-item">
-                                <div class="form-group-prev-info">
-                                    <label for="off2" class="car-form_label"> تخفیف حوادث راننده</label>
-                                    <div class="input-group">
-                                        <input type="text" id="off2"  placeholder="تخفیف حوادث راننده"  >
-                                        <button> <a href="#">راهنما </a> </button>
-                                    </div>
-                                    
-                                </div>
-                            </div> 
-                            
-                            
-                        </form>
-                        <div class="notice">
-                            <p> درصد تخفیف خود را مطابق <a href="#">راهنما</a> و عینا از روی بیمه نامه وارد کنید <br>به تخفیف درج شده در بیمه نامه عددی اضافه نکنید تخفیف به صورت خودکار محاسبه می شود </p>
-
-                        </div>
-
-                    </div>
-    
+            <div class="sec-prev-info-right">
+                <div class="sec-prev-info-header">
+                    <h2 class="sec-prev-info-h2">تاریخ اعتبار و درصد تخفیف بیمه نامه قبلی خود را انتخاب کنید</h2>
                 </div>
-                <div class="selection" > 
-                    <div class="img-selection">
-                        <div class="img1"> <img src="img/car.svg" alt="car icon"></div>
-                    </div>
-                    <h2 class="h2-selection"> بیمه شخص ثالث </h2>
+                
+                <div class="prev-info_main">
+                    <form action="#" class="prev-info_form">
+                        <div class="prev-info_item" >
+                            <div class="prev-info_form-group" >
+                                <label for="item1" class="prev-info_label"> تاریخ شروع بیمه نامه</label>
+                                <input  data-jdp type="text" id="item1"  placeholder="تاریخ انقضای بیمه نامه" required>
+                            </div>
+                        </div>
 
-                    <div class="btn-selection">
-                        <button id="selected-type-btn" >نوع وسیله</button>
-                        <button id="selected-brand-btn">برند</button>
-                    </div>
-    
-                    <div class="btn-selection">
-                        <button id="selected-model-btn">مدل</button>
-                        <button id="selected-year-btn" >سال ساخت</button>
-                    </div>
-                    
-                    <div class="progress-bar">
-                       <img src="img/Group 2410@2X.png" >
-                    </div>
-                    <div class="btn-pagination">
-                        <button> <span>&#10094;  </span>  <a href="prev-bime.html"> مرحله قبل </a> </button>
-                        <button> <a href="history-damage.html"> مرحله بعد</a> <span> &#10095;</span> </button>
+                        <div class="prev-info_item">
+                            <div class="prev-info_form-group">
+                                <label for="item2" class="prev-info_label"> تاریخ انقضای بیمه نامه</label>
+                                <input type="text" id="item2" placeholder="تاریخ انقضای بیمه نامه" disabled>
+                            </div>
+                        </div> 
+                        <div class="prev-info_item" >
+                            <div class="prev-info_form-group">
+                                <label for="off1" class="prev-info_label"> تخفیف شخص ثالث</label>
+                                <div class="input-btn-group">
+                                    <input type="text" id="off1" placeholder="تخفیف شخص ثالث " >
+                                    <button> <a href="#">راهنما </a> </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="prev-info_item">
+                            <div class="prev-info_form-group">
+                                <label for="off2" class="prev-info_label"> تخفیف حوادث راننده</label>
+                                <div class="input-btn-group">
+                                    <input type="text" id="off2"  placeholder="تخفیف حوادث راننده"  >
+                                    <button> <a href="#">راهنما </a> </button>
+                                </div>
+                                
+                            </div>
+                        </div> 
                         
+                        
+                    </form>
+                    <div class="notice">
+                        <p> درصد تخفیف خود را مطابق <a href="#">راهنما</a> و عینا از روی بیمه نامه وارد کنید <br>به تخفیف درج شده در بیمه نامه عددی اضافه نکنید تخفیف به صورت خودکار محاسبه می شود </p>
+
                     </div>
+
+                </div>
+
+            </div>
+            <div class="selection" > 
+                <div class="selection-img">
+                    <div class="selection-img-bg"> 
+                        <img src="img/car.svg" alt="car icon">
+                    </div>
+                </div>
+                <h2 class="selection-h2"> بیمه شخص ثالث </h2> 
+
+                <div class="selection-btn">
+                    <button id="selected-type-btn" >نوع وسیله</button>
+                    <button id="selected-brand-btn">برند</button>
+                </div>
+
+                <div class="selection-btn">
+                    <button id="selected-model-btn">مدل</button>
+                    <button id="selected-year-btn" >سال ساخت</button>
+                </div>
+
+                <div class="selection-progress-bar">
+                    <img src="img/Group 2410@2X.png" >
+                </div>
+
+                <div class="selection-pagination">
+                    <button> <span>&#10094;  </span>  <a href="prev-bime.html"> مرحله قبل </a> </button>
+                    <button> <a href="history-damage.html"> مرحله بعد</a> <span> &#10095;</span> </button>
+                    
                 </div>
             </div>
         </section>
@@ -213,7 +212,6 @@
                 </div>
             </div>
         </div>
-
     </footer>
 
     <script type="text/javascript" src="js/jalalidatepicker.js"></script>

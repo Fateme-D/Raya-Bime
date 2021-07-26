@@ -1,0 +1,117 @@
+.sec-prev-info {
+    @include bime-box;
+
+    &-right {
+        @include bime-box-right; 
+    }
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 1rem;
+    }
+    &-h2 {
+        @include bime-box-right-h2;
+        width: max-content;
+    }
+}
+
+
+.prev-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem 1.5rem .5rem 0;
+    justify-content: space-between;
+    &_item {
+        width: 25rem;
+        margin-bottom: 3rem;
+    }
+    &_label {
+        font-size: 1.2rem;
+        font-family: $font-family;
+        color: $color-grey-dark-2;
+        margin-right: .9rem;
+        display: inline-block;
+        margin-bottom: .3rem;
+    }
+    &_form {
+        display: flex;
+        flex-wrap: wrap;
+        padding: .5rem 1.5rem .5rem 0;
+        justify-content: space-between;
+        &-group input{
+            background-color: $color-white;
+            padding: 1rem 1.5rem;
+            border-radius: .7rem;
+            color: $color-grey-dark-1;
+            width: 24.5rem;
+            box-shadow: .2rem .2rem .5rem #eaeaea;
+            border: 0;
+            font-size: 1.2rem;
+            font-family: $font-family;
+            outline: none;
+            &::placeholder {
+                color: #aaaaaa;
+                font-size: 1.1rem;
+                font-weight: 100;
+            }
+        }
+    }
+}
+
+.input-btn-group {
+    position: relative;
+    & input{
+        background-color: $color-white;
+        padding: 1rem 1.5rem;
+        border-radius: .7rem;
+        color: $color-grey-dark-1;
+        width: 24.5rem;
+        box-shadow: .2rem .2rem .5rem #eaeaea;
+        border: 0;
+        font-size: 1.2rem;
+        font-family: $font-family;
+        outline: none;
+        &::placeholder {
+            color: #aaaaaa;
+            font-size: 1.1rem;
+            font-weight: 100;
+        }
+    }
+    & button {
+        position: absolute;
+        color: $color-white;
+        background-color: $color-blue;
+        font-family: $font-family;
+        font-size: 1.1rem;
+        border: 0;
+        width: 5.2rem;
+        padding: .3rem 0;
+        border-radius: .3rem;
+        top: .8rem;
+        right: 18.3rem;
+    }
+}
+
+.notice {
+    margin-top: 4rem;
+    & p {
+        background-color: $color-white;
+        padding: 1rem 0;
+        border-radius: .7rem;
+        color: $color-grey-dark-1;
+        box-shadow: .2rem .2rem .5rem #eaeaea;
+        border: 0;
+        font-size: 1.1rem;
+        font-family: $font-family;
+        outline: none;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 2.2rem;
+        & a {
+            color: $color-primary;
+        }
+    }
+}
+

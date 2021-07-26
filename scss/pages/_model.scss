@@ -1,0 +1,141 @@
+.sec-model {
+    @include bime-box;
+
+    &-right {
+        @include bime-box-right; 
+    }
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 1rem;
+    }
+    &-h2 {
+        @include bime-box-right-h2;
+        min-width: 20.5rem;
+    }
+}
+
+
+
+.model-form {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+
+    &-group {
+        display: flex;
+        flex-direction: column;
+        margin: 1.5rem 0;
+    }
+    &_label {
+        font-size: 1.2rem;
+        font-family: $font-family;
+        color: $color-grey-dark-2;
+        margin-right: 1.9rem;
+        margin-bottom: .5rem;
+    }
+    &-input {
+        outline: none;
+        background-color: $color-white;
+        padding: 1rem 1.5rem;
+        border-radius: .7rem;
+        color:  $color-grey-dark-1 ;
+        width: 24rem;
+        box-shadow: .2rem .2rem .5rem #eaeaea;
+        border: 0;
+        font-size: 1.2rem;
+        font-family: $font-family;
+        margin-right: .9rem;
+        margin-bottom: .2rem;
+        & option {
+            color: $color-grey-dark-1 ;
+            padding: .3rem;
+            text-align: center;
+            cursor: pointer;
+            &:hover{
+                color: $color-blue;
+            }
+        }
+        &::-webkit-scrollbar {
+            width: 5rem;
+            background-color:#cedbe8;
+        }
+        &::-webkit-scrollbar {
+            width: .9rem;
+            background-color: #F5F5F5;
+        } 
+        &::-webkit-scrollbar-thumb {
+            background-color: $color-blue;
+            border-radius: 1rem;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #e5e5e5fc;
+            border-radius: 1rem;
+        }
+    }
+}
+
+.wrapper-select label {
+    cursor: pointer;
+}
+.mylabel {
+    padding: 0 2rem 0 1rem;
+    border:solid .1rem #eee;
+    background-color: $color-white;
+    padding: 1rem 1.5rem;
+    border-radius: .7rem;
+    color:  $color-grey-dark-1 ;
+    display: inline-block;
+    width: 24rem;
+    box-shadow: .2rem .2rem .5rem #eaeaea;
+    border: 0;
+    font-size: 1.2rem;
+    font-family: $font-family;
+    margin-right: .9rem;
+    margin-bottom: .2rem;
+}
+.hover {
+    background: $color-white;
+    color: $color-white;
+}
+
+//style right column:
+.model-right-col {
+    width: 25rem;
+} 
+.select-input {
+    direction: ltr;
+    text-align: right;
+    margin-top: .5rem;
+    &::-ms-expand {
+        display: none;
+    }
+}
+//style left column:
+.model-right-col {
+    width: 25rem;
+} 
+.couple-lable {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 2.2rem;
+}
+.vertical-line {
+    width: 3.1rem;
+    height: .15rem;
+    background-color: #dedede;
+    border: 0;
+    transform: rotate(90deg) translateX(.5rem);
+    -webkit-transform: rotate(90deg) translateX(.5rem);
+    -moz-transform: rotate(90deg) translateX(.5rem);
+}
+.select-input-2 {
+    direction: ltr;
+    text-align: right;
+    margin-top: -2.4rem;
+    & option {
+        display: flex;
+        justify-content: space-around;
+    }
+}

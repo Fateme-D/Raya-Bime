@@ -4,19 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-bime.css">
+    <link rel="stylesheet" href="css/main.min.css">
     <title>  بیمه شخص ثالث برند</title>
-    <style>
-        .card {
-            width: 108px;
-            margin: 7px 0px;
-        }
-    </style>
 </head> 
 <body>
     <header >
         <div class="header-primary">
-            <ul class="header-list">
+            <ul class="header-primary-list">
                 <li> <a href="#">قوانین و مقررات  </a></li>
                 <li> <a href="#"> درباره ی ما</a></li>
                 <li> <a href="#"> همکاری با ما</a></li>
@@ -26,34 +20,34 @@
     </header>
     <nav class="nav__cont">
         <ul class="nav">
-          <li class="nav__items">
-            <a href="home.html">
-                <img class="nav__img" src="img/nav-item-1.svg" alt="nav icon">
-            </a>
-          </li>
-          <li class="nav__items">
-            <a href="home.html">
-                <img class="nav__img" src="img/nav-item-2.svg" alt="nav icon">
-            </a>
-          </li>
-          <li class="nav__items">
-            <a href="home.html">
-                <img class="nav__img" src="img/nav-item-3.svg" alt="nav icon">
-            </a>
-          </li>
-
-          <li class="nav__items">
-            <a href="home.html">
-                <img class="nav__img" src="img/nav-item-4.svg" alt="nav icon">
-            </a>
-          </li>
-
-          <li class="nav__items">
-            <a href="home.html">
-                <img class="nav__img" src="img/nav-item-5.svg" alt="nav icon">
-            </a>
-          </li>
-        </ul>
+            <li class="nav__items">
+              <a href="home.html">
+                  <img class="nav__img" src="img/nav-item-1.svg" alt="nav icon">
+              </a>
+            </li>
+            <li class="nav__items">
+              <a href="home.html">
+                  <img class="nav__img" src="img/nav-item-2.svg" alt="nav icon">
+              </a>
+            </li>
+            <li class="nav__items">
+              <a href="home.html">
+                  <img class="nav__img" src="img/nav-item-3.svg" alt="nav icon">
+              </a>
+            </li>
+  
+            <li class="nav__items">
+              <a href="home.html">
+                  <img class="nav__img" src="img/nav-item-4.svg" alt="nav icon">
+              </a>
+            </li>
+  
+            <li class="nav__items">
+              <a href="home.html">
+                  <img class="nav__img" src="img/nav-item-5.svg" alt="nav icon">
+              </a>
+            </li>
+          </ul>
     </nav>
     <main class="main-section">
         <div class="header-secondary">
@@ -66,209 +60,210 @@
                     <li> <a href="#"> بلاگ</a></li>
                 </ul>
             </div>
-            <div>
+            <div style="display: none;">
                 <button class="btn-g draw-border">بیمه های من</button>
             </div>
         </div>
         <section class="sec-model">
-            <div class="sec-model-content">
-                <div class="sec-model-item1">
-                    <div class="car-model-header">
-                        <div class="h2-model">
-                            <h2 >مدل وسیله خود را انتخاب کنید</h2>
-                        </div>
-                        <div class="search-box">
-                            <input type="text" placeholder="مدل وسیله نقلیه...">
-                            <button> <img class="search-icon" src="img/icons-search.svg" alt="search icon"></button>
-                        </div>
+            <div class="sec-model-right">
+                <div class="sec-model-header">
+                    <div >
+                        <h2 class="sec-model-h2">مدل وسیله خود را انتخاب کنید</h2>
                     </div>
-                    
-                    <div class="car-model-and-year">
-                        <form action="#" class="model-sec-form">
-                            <div class="car-right-col">
-                                <div class="form-group-model">
-                                    <label for="model" class="car-form_label">مدل وسیله نقلیه</label>
-                                    <div class="wrapper-select" >
-                                        <label class="mylabel" id='choose' for='options'>  مدل وسیله نقلیه...</label>
-                                        <br clear='all' />
-                                        <select size="5" class="select-input form-input-model" style="display: none;" name="model" id="model"  required >
-                                            <option value="" disabled selected hidden > مدل وسیله نقلیه...</option>
-                                            <option > مدل وسیله نقلیه نوع اول </option>
-                                            <option > مدل وسیله نقلیه نوع دوم </option>
-                                            <option > مدل وسیله نقلیه نوع سوم </option>
-                                            <option > مدل وسیله نقلیه نوع چهارم </option>
-                                            <option > مدل وسیله نقلیه نوع پنجم </option>
-                                            <option > مدل وسیله نقلیه نوع ششم </option>
-                                            <option > مدل وسیله نقلیه نوع اول </option>
-                                            <option > مدل وسیله نقلیه نوع اول </option>
-                                            <option > مدل وسیله نقلیه نوع اول </option>
-                                            <option > مدل وسیله نقلیه نوع اول </option>
-                                            <option > مدل وسیله نقلیه نوع اول </option>
-                                            <option > مدل وسیله نقلیه نوع اول </option>
-                                            <option > مدل وسیله نقلیه نوع اول </option>
-                                            <option > مدل وسیله نقلیه نوع اول </option>
-                                            <option > مدل وسیله نقلیه نوع اول </option>
-                                            <option > مدل وسیله نقلیه نوع دوم </option>
-                                            <option > مدل وسیله نقلیه نوع سوم </option>
-                                            <option > مدل وسیله نقلیه نوع چهارم </option>
-                                            <option > مدل وسیله نقلیه نوع پنجم </option>
-                                            <option > مدل وسیله نقلیه نوع ششم </option>
-                                            <option > مدل وسیله نقلیه نوع اول </option>
-                                            <option > مدل وسیله نقلیه نوع اول </option>
-                                            <option > مدل وسیله نقلیه نوع اول </option>
-                                        </select>
-                                    </div>
+                    <div class="search-box">
+                        <input type="text" placeholder="مدل وسیله نقلیه...">
+                        <button> <img class="search-box-icon" src="img/icons-search.svg" alt="search icon"></button>
+                    </div>
+                </div>
+                
+                <div class="sec-model-and-year">
+                    <form action="#" class="model-form">
+                        <div class="model-right-col">
+                            <div class="model-form-group">
+                                <label for="model" class="model-form_label">مدل وسیله نقلیه</label>
+                                <div class="wrapper-select" >
+                                    <label class="mylabel" id='choose' for='options'>  مدل وسیله نقلیه...</label>
+                                    <br clear='all' />
+                                    <select size="5" class="select-input model-form-input" style="display: none;" name="model" id="model"  required >
+                                        <option value="" disabled selected hidden > مدل وسیله نقلیه...</option>
+                                        <option > مدل وسیله نقلیه نوع اول </option>
+                                        <option > مدل وسیله نقلیه نوع دوم </option>
+                                        <option > مدل وسیله نقلیه نوع سوم </option>
+                                        <option > مدل وسیله نقلیه نوع چهارم </option>
+                                        <option > مدل وسیله نقلیه نوع پنجم </option>
+                                        <option > مدل وسیله نقلیه نوع ششم </option>
+                                        <option > مدل وسیله نقلیه نوع اول </option>
+                                        <option > مدل وسیله نقلیه نوع اول </option>
+                                        <option > مدل وسیله نقلیه نوع اول </option>
+                                        <option > مدل وسیله نقلیه نوع اول </option>
+                                        <option > مدل وسیله نقلیه نوع اول </option>
+                                        <option > مدل وسیله نقلیه نوع اول </option>
+                                        <option > مدل وسیله نقلیه نوع اول </option>
+                                        <option > مدل وسیله نقلیه نوع اول </option>
+                                        <option > مدل وسیله نقلیه نوع اول </option>
+                                        <option > مدل وسیله نقلیه نوع دوم </option>
+                                        <option > مدل وسیله نقلیه نوع سوم </option>
+                                        <option > مدل وسیله نقلیه نوع چهارم </option>
+                                        <option > مدل وسیله نقلیه نوع پنجم </option>
+                                        <option > مدل وسیله نقلیه نوع ششم </option>
+                                        <option > مدل وسیله نقلیه نوع اول </option>
+                                        <option > مدل وسیله نقلیه نوع اول </option>
+                                        <option > مدل وسیله نقلیه نوع اول </option>
+                                    </select>
                                 </div>
-                            </div> 
-                            
-                            <div class="car-left-col">
-                                <div class="form-group-model">
-                                    <label for="year" class="car-form_label">سال ساخت</label>
-                                    <div class="wrapper-select" >
-                                        <label class="mylabel couple-lable" id='choose' for='options'> 
+                            </div>
+                        </div> 
+                        
+                        <div class="model-left-col">
+                            <div class="model-form-group">
+                                <label for="year" class="model-form_label">سال ساخت</label>
+                                <div class="wrapper-select" >
+                                    <label class="mylabel couple-lable" id='choose' for='options'> 
+                                        <div>2021</div>
+                                        <hr class="vertical-line">
+                                        <div>1400</div>
+                                    </label>
+                                    <br clear='all' />
+                                    <select size="5" class="select-input-2 model-form-input" style="display: none;" name="year" id="year"  required >
+                                        <option value="" disabled selected hidden > 
+                                            <div>2020 </div>
+                                            <hr class="vertical-line">
+                                            <div>1399</div>
+                                        </option>
+                                        <option >
+                                            <div>2019</div>
+                                            <hr class="vertical-line">
+                                            <div>1398</div>
+                                        </option>
+                                        <option >
+                                            <div>2018 </div>
+                                            <hr class="vertical-line">
+                                            <div>1397</div>
+                                        </option>
+                                        <option >
+                                            <div>2017</div>
+                                            <hr class="vertical-line">
+                                            <div>1396</div>
+                                        </option>
+                                        <option >
+                                            <div>2016</div>
+                                            <hr class="vertical-line">
+                                            <div>1395</div>
+                                        </option>
+                                        <option >
+                                            <div>2015</div>
+                                            <hr class="vertical-line">
+                                            <div>1394</div>
+                                        </option>
+                                        <option >
                                             <div>2021</div>
                                             <hr class="vertical-line">
                                             <div>1400</div>
-                                        </label>
-                                        <br clear='all' />
-                                        <select size="5" class="select-input-2 form-input-model" style="display: none;" name="year" id="year"  required >
-                                            <option value="" disabled selected hidden > 
-                                                <div>2020 </div>
-                                                <hr class="vertical-line">
-                                                <div>1399</div>
-                                            </option>
-                                            <option >
-                                                <div>2019</div>
-                                                <hr class="vertical-line">
-                                                <div>1398</div>
-                                            </option>
-                                            <option >
-                                                <div>2018 </div>
-                                                <hr class="vertical-line">
-                                                <div>1397</div>
-                                            </option>
-                                            <option >
-                                                <div>2017</div>
-                                                <hr class="vertical-line">
-                                                <div>1396</div>
-                                            </option>
-                                            <option >
-                                                <div>2016</div>
-                                                <hr class="vertical-line">
-                                                <div>1395</div>
-                                            </option>
-                                            <option >
-                                                <div>2015</div>
-                                                <hr class="vertical-line">
-                                                <div>1394</div>
-                                            </option>
-                                            <option >
-                                                <div>2021</div>
-                                                <hr class="vertical-line">
-                                                <div>1400</div>
-                                            </option>
-                                            <option >
-                                                <div>2021</div>
-                                                <hr class="vertical-line">
-                                                <div>1400</div>
-                                            </option>
-                                            <option >
-                                                <div>2021</div>
-                                                <hr class="vertical-line">
-                                                <div>1400</div>
-                                            </option>
-                                            <option >
-                                                <div>2021</div>
-                                                <hr class="vertical-line">
-                                                <div>1400</div>
-                                            </option>
-                                            <option >
-                                                <div>2021</div>
-                                                <hr class="vertical-line">
-                                                <div>1400</div>
-                                            </option>
-                                            <option >
-                                                <div>2021</div>
-                                                <hr class="vertical-line">
-                                                <div>1400</div>
-                                            </option>
-                                            <option >
-                                                <div>2021</div>
-                                                <hr class="vertical-line">
-                                                <div>1400</div>
-                                            </option>
-                                            <option >
-                                                <div>2021</div>
-                                                <hr class="vertical-line">
-                                                <div>1400</div>
-                                            </option>
-                                            <option >
-                                                <div>2021</div>
-                                                <hr class="vertical-line">
-                                                <div>1400</div>
-                                            </option>
-                                            <option >
-                                                <div>2021</div>
-                                                <hr class="vertical-line">
-                                                <div>1400</div>
-                                            </option>
-                                            <option >
-                                                <div>2021</div>
-                                                <hr class="vertical-line">
-                                                <div>1400</div>
-                                            </option>
-                                            <option >
-                                                <div>2021</div>
-                                                <hr class="vertical-line">
-                                                <div>1400</div>
-                                            </option>
-                                            <option >
-                                                <div>2021</div>
-                                                <hr class="vertical-line">
-                                                <div>1400</div>
-                                            </option>
-                                            <option >
-                                                <div>2021</div>
-                                                <hr class="vertical-line">
-                                                <div>1400</div>
-                                            </option>
-                                            <option >
-                                                <div>2021</div>
-                                                <hr class="vertical-line">
-                                                <div>1400</div>
-                                            </option>
+                                        </option>
+                                        <option >
+                                            <div>2021</div>
+                                            <hr class="vertical-line">
+                                            <div>1400</div>
+                                        </option>
+                                        <option >
+                                            <div>2021</div>
+                                            <hr class="vertical-line">
+                                            <div>1400</div>
+                                        </option>
+                                        <option >
+                                            <div>2021</div>
+                                            <hr class="vertical-line">
+                                            <div>1400</div>
+                                        </option>
+                                        <option >
+                                            <div>2021</div>
+                                            <hr class="vertical-line">
+                                            <div>1400</div>
+                                        </option>
+                                        <option >
+                                            <div>2021</div>
+                                            <hr class="vertical-line">
+                                            <div>1400</div>
+                                        </option>
+                                        <option >
+                                            <div>2021</div>
+                                            <hr class="vertical-line">
+                                            <div>1400</div>
+                                        </option>
+                                        <option >
+                                            <div>2021</div>
+                                            <hr class="vertical-line">
+                                            <div>1400</div>
+                                        </option>
+                                        <option >
+                                            <div>2021</div>
+                                            <hr class="vertical-line">
+                                            <div>1400</div>
+                                        </option>
+                                        <option >
+                                            <div>2021</div>
+                                            <hr class="vertical-line">
+                                            <div>1400</div>
+                                        </option>
+                                        <option >
+                                            <div>2021</div>
+                                            <hr class="vertical-line">
+                                            <div>1400</div>
+                                        </option>
+                                        <option >
+                                            <div>2021</div>
+                                            <hr class="vertical-line">
+                                            <div>1400</div>
+                                        </option>
+                                        <option >
+                                            <div>2021</div>
+                                            <hr class="vertical-line">
+                                            <div>1400</div>
+                                        </option>
+                                        <option >
+                                            <div>2021</div>
+                                            <hr class="vertical-line">
+                                            <div>1400</div>
+                                        </option>
+                                        <option >
+                                            <div>2021</div>
+                                            <hr class="vertical-line">
+                                            <div>1400</div>
+                                        </option>
 
-                                        </select>
-                                    </div>
+                                    </select>
                                 </div>
                             </div>
-                        </form>
-                    </div>
-    
+                        </div>
+                    </form>
                 </div>
-                <div class="selection" > 
-                    <div class="img-selection">
-                        <div class="img1"> <img src="img/car.svg" alt="car icon"></div>
-                    </div>
-                    <h2 class="h2-selection"> بیمه شخص ثالث </h2> 
 
-                    <div class="btn-selection">
-                        <button id="selected-type-btn" >نوع وسیله</button>
-                        <button id="selected-brand-btn">برند</button>
+            </div>
+            <div class="selection" > 
+                <div class="selection-img">
+                    <div class="selection-img-bg"> 
+                        <img src="img/car.svg" alt="car icon">
                     </div>
-    
-                    <div class="btn-selection">
-                        <button id="selected-model-btn">مدل</button>
-                        <button id="selected-year-btn" >سال ساخت</button>
-                    </div>
-                    
-                    <div class="progress-bar">
-                       <img src="img/Group 2410@2X.png" >
-                    </div>
-                    <div class="btn-pagination">
-                        <button> <span>&#10094;  </span>  <a href="brand.html"> مرحله قبل </a> </button>
-                        <button> <a href="prev-bime.html"> مرحله بعد</a> <span> &#10095;</span> </button>
-                    </div>
+                </div>
+                <h2 class="selection-h2"> بیمه شخص ثالث </h2> 
+
+                <div class="selection-btn">
+                    <button id="selected-type-btn" >نوع وسیله</button>
+                    <button id="selected-brand-btn">برند</button>
+                </div>
+
+                <div class="selection-btn">
+                    <button id="selected-model-btn">مدل</button>
+                    <button id="selected-year-btn" >سال ساخت</button>
+                </div>
+
+                <div class="selection-progress-bar">
+                    <img src="img/Group 2410@2X.png" >
+                </div>
+
+                <div class="selection-pagination">
+                    <button> <span>&#10094;  </span>  <a href="brand.html"> مرحله قبل </a> </button>
+                    <button> <a href="prev-bime.html"> مرحله بعد</a> <span> &#10095;</span> </button>
                 </div>
             </div>
         </section>
@@ -336,7 +331,7 @@
                 </div>
             </div>
         </div>
-
+        
     </footer>
 
     <script type='text/javascript' src='js/jquery-3.2.1.min.js'></script>

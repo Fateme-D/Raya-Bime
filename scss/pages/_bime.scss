@@ -1,10 +1,8 @@
 .sec-type {
-    @include bime-box; 
-    display: flex;
-    flex-direction: row; 
-
-    &-item1 {
-        @include bime-first-col; 
+    @include bime-box;
+    
+    &-right {
+        @include bime-box-right; 
         & p {
             font-family: $font-family;
             color: $color-grey-dark-2;
@@ -16,7 +14,7 @@
         }
     }
     &-h2 {
-        @include bime-first-col-h2;
+        @include bime-box-right-h2;
         width: 50%;
     }
     &-2 {

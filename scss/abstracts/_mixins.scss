@@ -5,10 +5,12 @@
     width: 100%;
     align-items: stretch;  
     justify-content: center;
-    height: 95vh;  
+    height: 95vh;
+    display: flex;
+    flex-direction: row; 
 }
 
-@mixin bime-first-col {
+@mixin bime-box-right {
     border: .15rem solid $color-blue;
     border-radius: 1rem;
     padding: 1rem 3rem;
@@ -19,7 +21,7 @@
     width: 65rem;
 }
 
-@mixin bime-first-col-h2 {
+@mixin bime-box-right-h2 {
     font-family: $font-family;
     color: $color-grey-dark-1;
     font-size: 1.6rem;

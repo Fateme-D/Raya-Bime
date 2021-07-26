@@ -931,7 +931,7 @@ footer {
 
 
 
-.form_h3{
+form > h3 {
     font-size: 22px;
     font-family: 'IRANSans', 'yekan2', sans-serif;
     color: #585858;
@@ -1155,7 +1155,6 @@ footer {
 
 
 /*brand.html */
-
 .sec-brand {
     padding: 15px 30px;
     background-image: url(../img/bg1.jpg); 
@@ -1164,9 +1163,6 @@ footer {
     align-items: stretch;
     justify-content: center;
     height: 95vh;
-
-}
-.sec-brand-content {
     display: flex;
     flex-direction: row;
     padding: 15px 30px;
@@ -1176,7 +1172,9 @@ footer {
     align-items: stretch;
     justify-content: center;
     height: 95vh;
+
 }
+
 .selected-item {
     color: #fff !important;
     background-color: #e88200e6 !important;
@@ -1209,7 +1207,7 @@ footer {
     width: 70%;
 } */
 
-.car-brand-header {
+.sec-brand-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1217,7 +1215,7 @@ footer {
 }
 .search-box {
     position: relative;
-    
+ 
 }
 
 .search-box > input {
@@ -1360,6 +1358,8 @@ footer {
     padding: 6px;
     min-width: 205px;
 }
+
+
 .wrapper-select label {
     cursor: pointer;
 }
@@ -1569,6 +1569,8 @@ footer {
     min-width: 205px;
 }
 
+
+
 .car-prev-bime-main {
     margin-right: 8px;
 }
@@ -1627,7 +1629,9 @@ footer {
     -webkit-transform: rotate(90deg) translateX(14px);
     -moz-transform: rotate(90deg) translateX(5px);
 }
-
+.form__radio-group {
+    padding: 5px 0px;
+}
 .prev-bime-form{
     direction: rtl;
     display: inline-block;
@@ -1649,9 +1653,7 @@ footer {
     height: 75%;
     direction: ltr;
 }
-.form__radio-group {
-    padding: 5px 0px;
-}
+
 
 .car-prev-bime-main::-webkit-scrollbar {
     width:50px;
@@ -1878,6 +1880,11 @@ footer {
     padding: 6px;
     width: max-content;
 }
+
+
+
+
+
 .history-damage-form {
     display: flex;
     flex-wrap: wrap;
