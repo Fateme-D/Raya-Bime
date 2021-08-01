@@ -112,6 +112,9 @@
         
         }
     }
+    @include respond(tab-port) {
+        width: 24rem;
+    }
 }
 //end
 

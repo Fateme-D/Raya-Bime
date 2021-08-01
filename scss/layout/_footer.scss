@@ -1,32 +1,50 @@
 footer {
-    border-top: 18px solid #f1f1f1;
-}
+    border-top: 1.8rem solid #f1f1f1;
+} 
 .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 20px;
-    margin-left: 100px;
+    margin: 2rem;
+    margin-left: 10rem;
+    @include respond(tab-port) { 
+        flex-wrap: wrap;
+    }
+
+    @include respond(phone) { 
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    @include respond(big-desktop) {
+        width: 130rem;
+        margin: 2.5rem auto;
+    }
     &-col1 {
         display: flex;
         flex-direction: column;
+        @include respond(phone) { 
+            text-align: center;
+            width: 100%;
+            margin: 2rem auto;
+        }
         & > div {
             & > span {
-                font-family: 'IRANSans', 'yekan2';
-                color: #585858;
-                font-size: 12px;
+                font-family: $font-family ;
+                color: $color-grey-dark-2 ;
+                font-size: 1.2rem;
             }
             & > img {
                 &:last-child {
-                    width: 80px;
-                    margin: 8px 5px;
+                    width: 8rem;
+                    margin: .8rem .5rem;
                 }
                 &:not(:last-child) {
-                    width: 15px;
+                    width: 1.5rem;
                     height: auto;
                     position: relative;
-                    top: 6px;
-                    margin: 2px 6px;
+                    top: .6rem;
+                    margin: .2rem .6rem;
                 }
             }
         }
@@ -34,19 +52,30 @@ footer {
     &-col2 {
         & > div {
             display: flex;
+            margin: 0 auto;
         }
         & > h4 {
-            color: #0f7dd0;
-            font-family: 'IRANSans', 'yekan2';
+            color: $color-blue ;
+            font-family: $font-family ;
             text-align: center;
-            margin: 3px 0px;
+            margin: .3rem 0;
         }
         &-column > ul > li {
             list-style-type: none;
-            font-family: 'IRANSans', 'yekan2';
-            color: #585858;
-            font-size: 12px;
-            margin: 5px 0px;
+            font-family: $font-family ;
+            color: $color-grey-dark-2 ;
+            font-size: 1.2rem;
+            margin: .5rem 0;
+        }
+        &-column:first-child > ul{
+            @include respond(phone) { 
+                padding: 0;
+            }
+        }
+        &-column:last-child > ul{
+            @include respond(phone) { 
+                padding-right: 2rem;
+            }
         }
         
     }
@@ -56,4 +85,8 @@ footer {
 .logo{
     width: 15rem;
     height: auto;
+    @include respond(tab-port) { 
+        width: 10rem;
+    }
 }
+

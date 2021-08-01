@@ -6,20 +6,19 @@
 
 html {
     //this defines what 1rem is
-    font-size: 10px; //1rem=10px;
-    // font-size: 62.5%;   //1rem=10px;  10px/16px=62.5%
+    //font-size: 10px; //1rem=10px;
+    font-size: 62.5%;   //1rem=10px;  10px/16px=62.5%
+    // @include respond(phone) {
+    //     font-size: 50%;
+    // }
+
+    // @media (max-width: 600px) {
+    //     font-size: 50%;
+    // }
+
+
     
-   /* @media (max-width: 600px) {
-        font-size: 50%;
-    }*/
 
-
-    /*@include respond(phone) {
-        font-size: 50%;
-    }
-    */
-
-    /*
     @include respond(tab-land) { //width < 1200
         font-size: 56.25%;     //1rem=8px;   8px/16px=56.5%
     }
@@ -35,7 +34,6 @@ html {
     @include respond(big-desktop) {
         font-size:75%;      //1rem=12,  12/16=75%
     }
-    */
 
     //Note: Always the large media query before the smaller media query
 }
@@ -43,10 +41,8 @@ html {
 
 body {
     box-sizing: border-box;
-    font-family: $font-family ;
     margin: 0;
     padding: 0;
-    font-size: 1.4rem;
     margin-top: -2rem;
 
 
@@ -63,11 +59,17 @@ a {
 img {
     width: 100%;
 }
+.container {
+    @include respond(big-desktop) {
+        max-width: 130rem;
+        margin: 0 auto;
+    }
+}
 
-// ::selection {
-//     background-color: $color-primary;
-//     color: $color-white;
-// }
+::selection {
+    background-color: $color-blue;
+    color: $color-white;
+}
 
 
 
@@ -92,7 +94,7 @@ img {
 
 
 .main-section {
-    margin-top: -28px;
-    border-bottom: 18px solid #e4e4e4;
-    padding-bottom: 70px;
+    margin-top: -2.8rem;
+    border-bottom: 1.8rem solid #e4e4e4;
+    padding-bottom: 7rem;
 }

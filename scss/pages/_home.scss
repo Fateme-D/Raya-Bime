@@ -3,29 +3,36 @@
     width: 90%;
     margin: 0 auto;
     justify-content: space-evenly;
-}
-.sec-home-1 {
-    width: 65rem;
-    height: 50rem;
-    & > h1{
-        color: $color-blue;
-        padding: 0 1.5rem;
-        font-size: 4rem;
-        font-weight: 600;
-        font-family: $font-family;
-        margin: 0;
-    }
-    & > h2 {
-        color: $color-primary;
-        padding: 1rem 1.5rem;
-        font-size: 1.8rem;
-        font-family: $font-family;
-        font-weight: 600;
-        margin: 0;
-    }
-}
-.sec-home-2{
-    width: 34rem;
-    height: 50rem;
-}
+    max-width: 130rem;
 
+    @include respond(tab-port) {
+        width: 95%;
+        flex-wrap: wrap;
+    }
+    @include respond(phone) {
+        width: 95%;
+    }
+    @include respond(big-desktop) {
+        max-width: 120rem;
+    }
+    
+    
+    &-right {
+        width: 65rem;
+        height: 50rem;
+    }
+    &-left {
+        width: 34rem;
+        height: 50rem;
+        @include respond(tab-port) {
+            width: 50rem;
+        }
+         @include respond(phone) {
+            display: none;
+        }
+    
+        @include respond(big-desktop) {
+            width: 40rem;
+        }
+    }
+}

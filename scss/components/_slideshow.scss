@@ -3,11 +3,22 @@
     width: 31rem;
     border-radius: 1rem;
     height: 47rem;
+    @include respond(tab-port) { //width < 900  (then if width=500 this media query applyed becouse order code wite hhh)
+        width: 50rem;
+        margin: 0 auto;
+    }
+    @include respond(big-desktop) {
+        width: 40rem;
+    }
 }
 .mySlides {
     display: none;
     & img {
         vertical-align: middle;
+        @include respond(tab-port) { //width < 900  (then if width=500 this media query applyed becouse order code wite hhh)
+            width: 40rem;
+            height: 37rem;
+        }
     }
 }
 .slideshow-container {
@@ -17,6 +28,13 @@
     height: 40rem;
     padding: 2rem 0;
     margin-right: -2.4rem;
+    @include respond(tab-port) { //width < 900  (then if width=500 this media query applyed becouse order code wite hhh)
+        width: 40rem;
+        margin-right: 4.6rem;
+    }
+    @include respond(big-desktop) {
+        margin-right: 0 ;
+    }
 }
 .dot {
     height: 1.4rem;
