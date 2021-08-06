@@ -7,7 +7,11 @@
     justify-content: center;
     height: 85vh;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
+    @include respond(phone) {
+        flex-wrap: wrap;
+        height: auto;
+    }
     @include respond(big-desktop) {
         height: 70vh;
     }

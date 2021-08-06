@@ -16,7 +16,7 @@
     outline: none;
     background-color: #ebebeb85;
     padding: 1rem 1.2rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
     color: $color-grey-dark-2;
     font-family: $font-family;
@@ -41,7 +41,7 @@
 }
 
 .form_label {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-family: $font-family;
     color: $color-grey-dark-1;
     margin-right: .9rem;
@@ -54,9 +54,10 @@
     font-family: $font-family;
     border: 0;
     border-radius: .7rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
     outline: none;
+    width: 23rem;
     color: #686868;
     border-bottom: .3rem solid transparent;
     &::placeholder {
