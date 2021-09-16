@@ -22,29 +22,29 @@
         <nav class="nav__cont">
             <ul class="nav">
                 <li class="nav__items">
-                  <a href="home.html">
+                  <a href="index.html">
                       <img class="nav__img" src="img/nav-item-1.svg" alt="nav icon">
                   </a>
                 </li>
                 <li class="nav__items">
-                  <a href="home.html">
+                  <a href="index.html">
                       <img class="nav__img" src="img/nav-item-2.svg" alt="nav icon">
                   </a>
                 </li>
                 <li class="nav__items">
-                  <a href="home.html">
+                  <a href="index.html">
                       <img class="nav__img" src="img/nav-item-3.svg" alt="nav icon">
                   </a>
                 </li>
       
                 <li class="nav__items">
-                  <a href="home.html">
+                  <a href="index.html">
                       <img class="nav__img" src="img/nav-item-4.svg" alt="nav icon">
                   </a>
                 </li>
       
                 <li class="nav__items">
-                  <a href="home.html">
+                  <a href="index.html">
                       <img class="nav__img" src="img/nav-item-5.svg" alt="nav icon">
                   </a>
                 </li>
@@ -54,8 +54,8 @@
             <div class="header-secondary">
                 <div>
                     <ul class="header-secondary-list">
-                        <li><a href="home.html"> <img src="img/logo1.png" alt="logo" class="logo"> </a></li>
-                        <li> <a href="home.html"> خانه </a></li>
+                        <li><a href="index.html"> <img src="img/logo1.png" alt="logo" class="logo"> </a></li>
+                        <li> <a href="index.html"> خانه </a></li>
                         <li> <a href="#"> انواع بیمه نامه</a></li>
                         <li> <a href="#"> شرکت های بیمه</a></li>
                         <li> <a href="#"> بلاگ</a></li>
@@ -133,7 +133,7 @@
                             </div>
                         </div>
                     </div>
-                    <p> اگر خرید خود را تا ساعت 21 در روزهای عادی و تا ساعت 19 در روزهای پنج شنبه و تعطیلات انجام دهید بیمه نامه همان روز صادر می شود</p>
+                    <p> اگر خرید خود را تا ساعت 21 در روزهای عادی و روزهای پنجشنبه انجام دهید بیمه نامه همان روز صادر می شود</p>
     
                 </div>
                 <div class="selection" > 
@@ -154,13 +154,17 @@
                         <button id="selected-year-btn" >سال ساخت</button>
                     </div>
     
-                    <div class="selection-progress-bar">
-                       <img src="img/Group 2410@2X.png" >
+                    <div class="selection-progress">
+                        <div class="selection-progress-cicle">
+                            <div class="selection-progress-cicle-2">
+                               <div class="selection-progress-percent"> 14 %</div> 
+                            </div>
+                        </div>
                     </div>
     
                     <div class="selection-pagination">
                         <button> <span>&#10094;  </span>  <a href="#"> مرحله قبل </a> </button>
-                        <button> <a href="brand.html" class="selected-car"> مرحله بعد</a> <span> &#10095;</span> </button>
+                        <button> <a href="brand.html" class="selected-car" id="frwdbtn"> مرحله بعد</a> <span> &#10095;</span> </button>
                     </div>
                 </div>
             </section>
@@ -171,8 +175,8 @@
                         <button class="tablinks "   onclick="openCity(event , 'tab-2')"> سوالات متداول </button>
                         <button class="tablinks " onclick="openCity(event , 'tab-3')">درخواست مشاوره </button>
                     </div>
-    
-    
+
+                    
                     <div id="tab-1" class="tabcontent " style="display: block;">
                         <div class="about1">
                             <div class="about1-sec-1">
@@ -492,16 +496,12 @@
 
 
         //js for selection button:
-        // $(document).ready( function() {
-        //     $('.selected-car').click(function () {
-        //         let val = $(this).children('h3').text();
-        //         $('#selected-type-btn').text(val);
-        //         $('#selected-type-btn').addClass('selected-item');
-        //     });
-        // });
         var selectedCar = document.querySelectorAll('.selected-car');
+        var frwdbtn = document.getElementById('frwdbtn') ;
+        frwdbtn.classList.add('disableBtn');
         for (i = 0; i < selectedCar.length ; i++) {
             selectedCar[i].onclick = function(){
+                frwdbtn.classList.remove('disableBtn');
                 let val =  this.children[1].innerText;
                 let Btn1 = document.querySelector('#selected-type-btn');
                 Btn1.innerHTML = val ;

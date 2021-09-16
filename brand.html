@@ -21,29 +21,29 @@
     <nav class="nav__cont">
         <ul class="nav">
             <li class="nav__items">
-              <a href="home.html">
+              <a href="index.html">
                   <img class="nav__img" src="img/nav-item-1.svg" alt="nav icon">
               </a>
             </li>
             <li class="nav__items">
-              <a href="home.html">
+              <a href="index.html">
                   <img class="nav__img" src="img/nav-item-2.svg" alt="nav icon">
               </a>
             </li>
             <li class="nav__items">
-              <a href="home.html">
+              <a href="index.html">
                   <img class="nav__img" src="img/nav-item-3.svg" alt="nav icon">
               </a>
             </li>
   
             <li class="nav__items">
-              <a href="home.html">
+              <a href="index.html">
                   <img class="nav__img" src="img/nav-item-4.svg" alt="nav icon">
               </a>
             </li>
   
             <li class="nav__items">
-              <a href="home.html">
+              <a href="index.html">
                   <img class="nav__img" src="img/nav-item-5.svg" alt="nav icon">
               </a>
             </li>
@@ -53,8 +53,8 @@
         <div class="header-secondary">
             <div>
                 <ul class="header-secondary-list">
-                    <li><a href="home.html"> <img src="img/logo1.png" alt="logo" class="logo"> </a></li>
-                    <li> <a href="home.html"> خانه </a></li>
+                    <li><a href="index.html"> <img src="img/logo1.png" alt="logo" class="logo"> </a></li>
+                    <li> <a href="index.html"> خانه </a></li>
                     <li> <a href="#"> انواع بیمه نامه</a></li>
                     <li> <a href="#"> شرکت های بیمه</a></li>
                     <li> <a href="#"> بلاگ</a></li>
@@ -435,13 +435,17 @@
                     <button id="selected-year-btn" >سال ساخت</button>
                 </div>
 
-                <div class="selection-progress-bar">
-                    <img src="img/Group 2410@2X.png" >
+                <div class="selection-progress">
+                    <div class="selection-progress-cicle">
+                        <div class="selection-progress-cicle-2">
+                           <div class="selection-progress-percent">  <span id="selection-progress-digit"> 28</span> %</div> 
+                        </div>
+                    </div>
                 </div>
 
                 <div class="selection-pagination">
                     <button> <span>&#10094;  </span>  <a href="bime.html"> مرحله قبل </a> </button>
-                    <button> <a href="model.html"> مرحله بعد</a> <span> &#10095;</span> </button>
+                    <button > <a href="model.html" id="frwdbtn" > مرحله بعد</a> <span> &#10095;</span> </button>
                     
                 </div>
             </div>
@@ -516,6 +520,28 @@
 
    
     <script>
+        //js for selection prev selection buttons:
+        var typeBtnPrev = sessionStorage.getItem("typeBtnContent");
+        var Btn1 = document.querySelector('#selected-type-btn');
+        Btn1.innerHTML = typeBtnPrev ;
+        Btn1.classList.add("selected-item");
+        var selectedBrand = document.querySelectorAll('.selected-brand');
+        frwdbtn.classList.add('disableBtn');
+       var selectedBrand = document.querySelectorAll('.selected-brand');
+       for (i = 0; i < selectedBrand.length ; i++) {
+            selectedBrand[i].onclick = function(){
+                frwdbtn.classList.remove('disableBtn');
+                let val =  this.children[1].innerText;
+                let Btn1 = document.querySelector('#selected-brand-btn');
+                Btn1.innerHTML = val ;
+                Btn1.classList.add("selected-item");
+                let brandBtn = document.querySelector("#selected-brand-btn").innerText;
+                sessionStorage.setItem("brandBtnContent", brandBtn);
+            }
+        }
+       //end
+
+
         //js for searchbox filter items:
         window.addEventListener("load", function(){
             document.querySelector("#filter-box").addEventListener("keyup", function(){
@@ -530,24 +556,8 @@
         });
 
 
-        //js for selection prev buttons:
-        var typeBtnPrev = sessionStorage.getItem("typeBtnContent");
-        var Btn1 = document.querySelector('#selected-type-btn');
-        Btn1.innerHTML = typeBtnPrev ;
-        Btn1.classList.add("selected-item");
+        
 
-        var selectedBrand = document.querySelectorAll('.selected-brand');
-        for (i = 0; i < selectedBrand.length ; i++) {
-            selectedBrand[i].onclick = function(){
-                let val =  this.children[1].innerText;
-                let Btn1 = document.querySelector('#selected-brand-btn');
-                Btn1.innerHTML = val ;
-                Btn1.classList.add("selected-item");
-                let brandBtn = document.querySelector("#selected-brand-btn").innerText;
-                sessionStorage.setItem("brandBtnContent", brandBtn);
-            }
-        }
-       //end
     </script>
 </body>
 </html>

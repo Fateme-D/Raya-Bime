@@ -6,7 +6,7 @@
         & p {
             font-family: $font-family;
             color: $color-grey-dark-2;
-            font-size: 1rem;
+            font-size: 1.2rem;
             border: .18rem solid $color-primary-light;
             border-radius: 2rem;
             padding: .5rem 2rem;
@@ -47,7 +47,7 @@
     &-img {
         position: absolute;
         right: calc(50% - 4.5rem);
-        top: -3.8rem;
+        top: -2.8rem;
         &-bg {
             width: 10rem;
             height: 9rem;
@@ -68,7 +68,7 @@
         color: $color-grey-dark-1;
         font-size: 1.5rem;
         font-weight: 600;
-        margin: 1rem;
+        margin: 2rem 0 1rem 0;
     }
     &-btn button {
         font-family: $font-family ;
@@ -81,10 +81,36 @@
         border-radius: 1.5rem;
         margin: .4rem;
     }
-    &-progress-bar img {
-        width: 9rem;
-        height: auto;
-        margin: 1rem 0;
+    &-progress{
+        &-cicle {
+            font-weight: 500;
+            font-size: 2.2rem;
+            border: 3px solid #92c8f7;
+            padding: 1rem;
+            width: 105px;
+            height: 105px;
+            border-radius: 50%;
+            position: relative;
+            &-2 {
+                font-weight: 500;
+                font-size: 2.2rem;
+                border: 2px solid #92c8f7;
+                width: 88px;
+                height: 88px;
+                border-radius: 50%;
+                position: absolute;
+                right: 5px;
+                top: 6px;
+            }
+        }
+        &-percent {
+            color: #4ba6f6;
+            font-weight: 500;
+            font-size: 2.2rem;
+            text-align: center;
+            margin-top: 26px;
+        }
+
     }
     &-pagination button {
         font-family: $font-family;
@@ -119,6 +145,9 @@
         width: 34rem;
         margin: 5rem 0;
     }
+}
+.disableBtn {
+    pointer-events : none;
 }
 //end
 
@@ -382,6 +411,7 @@
     display: block;
     height: 16rem;
     transition: height 1s;
+    margin-top: -1rem;
 }
 .about2-left {
     flex-grow: 2;

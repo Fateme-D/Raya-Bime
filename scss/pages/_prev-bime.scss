@@ -58,6 +58,7 @@
 .form__radio {
     &-group {
         padding: .5rem 0;
+        margin-left: 2rem;
     }
     &-input {
         display: none;
@@ -67,12 +68,13 @@
         cursor: pointer;
         position: relative;
         display: flex;
+        align-items: center;
         font-family: $font-family;
         color: $color-grey-dark-1;
     }
     &-button {
-        height: 1.4rem;
-        width: 1.4rem;
+        height: 2.4rem;
+        width: 2.4rem;
         border: .5rem solid #f2f2f2;
         border-radius: 50%;
         background-color: $color-white;
@@ -105,7 +107,7 @@
     margin: 0;
     background-color: #999999;
     border: 0;
-    transform: rotate(90deg) translateX( .5rem);
-    -webkit-transform: rotate(90deg) translateX(1.4rem);
-    -moz-transform: rotate(90deg) translateX(.5rem);
+    transform: rotate(90deg) translateX( .2rem);
+    -webkit-transform: rotate(90deg) translateX(.2rem);
+    -moz-transform: rotate(90deg) translateX(.2rem);
 } 

@@ -21,29 +21,29 @@
     <nav class="nav__cont">
         <ul class="nav">
             <li class="nav__items">
-              <a href="home.html">
+              <a href="index.html">
                   <img class="nav__img" src="img/nav-item-1.svg" alt="nav icon">
               </a>
             </li>
             <li class="nav__items">
-              <a href="home.html">
+              <a href="index.html">
                   <img class="nav__img" src="img/nav-item-2.svg" alt="nav icon">
               </a>
             </li>
             <li class="nav__items">
-              <a href="home.html">
+              <a href="index.html">
                   <img class="nav__img" src="img/nav-item-3.svg" alt="nav icon">
               </a>
             </li>
   
             <li class="nav__items">
-              <a href="home.html">
+              <a href="index.html">
                   <img class="nav__img" src="img/nav-item-4.svg" alt="nav icon">
               </a>
             </li>
   
             <li class="nav__items">
-              <a href="home.html">
+              <a href="index.html">
                   <img class="nav__img" src="img/nav-item-5.svg" alt="nav icon">
               </a>
             </li>
@@ -53,8 +53,8 @@
         <div class="header-secondary">
             <div>
                 <ul class="header-secondary-list">
-                    <li><a href="home.html"> <img src="img/logo1.png" alt="logo" class="logo"> </a></li>
-                    <li> <a href="home.html"> خانه </a></li>
+                    <li><a href="index.html"> <img src="img/logo1.png" alt="logo" class="logo"> </a></li>
+                    <li> <a href="index.html"> خانه </a></li>
                     <li> <a href="#"> انواع بیمه نامه</a></li>
                     <li> <a href="#"> شرکت های بیمه</a></li>
                     <li> <a href="#"> بلاگ</a></li>
@@ -302,8 +302,12 @@
                     <button id="selected-year-btn" >سال ساخت</button>
                 </div>
 
-                <div class="selection-progress-bar">
-                    <img src="img/Group 2410@2X.png" >
+                <div class="selection-progress">
+                    <div class="selection-progress-cicle">
+                        <div class="selection-progress-cicle-2">
+                            <div class="selection-progress-percent"> <span id="selection-progress-digit"> 70</span> %</div> 
+                        </div>
+                    </div>
                 </div>
 
                 <div class="selection-pagination">
@@ -410,6 +414,8 @@
             });
 
 
+
+        
         //js for selection prev buttons:
         var typeBtnPrev = sessionStorage.getItem("typeBtnContent");
         var Btn1 = document.querySelector('#selected-type-btn');
@@ -430,7 +436,33 @@
         var Btn4 = document.querySelector('#selected-year-btn');
         Btn4.innerHTML = yearBtnPrev ;
         Btn4.classList.add("selected-item");
+
+
+        // var percentBtn3Prev = sessionStorage.getItem("percentBtn3Content");
+        // var percent4 = document.querySelector('#selection-progress-digit');
+        // percent4.innerHTML = percentBtn3Prev ;
         //end
+
+
+
+        //js for :
+        function display() { 
+            var selectedRadioInput = document.querySelectorAll('.form__radio-input');
+            for (i = 0; i < selectedRadioInput.length ; i++) {
+                if(selectedRadioInput[i].checked) {
+                    // + 14 %
+                    let percentval = $('#selection-progress-digit').text();
+                    let digitPercent = Number(percentval);
+                    let newPercent = digitPercent + 14;
+                    $('#selection-progress-digit').text(newPercent);
+                    //END
+                    let percentBtn4 = document.querySelector("#selection-progress-digit").innerText;
+                    sessionStorage.setItem("percentBtn4Content", percentBtn4);
+                }
+            }
+        }
+        display();
+
 
     </script>
 </body>
