@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.min.css">
-    <title>  بیمه شخص ثالث برند</title>
+    <title>بیمه شخص ثالث</title>
 </head> 
 <body>
     <header >
@@ -51,18 +52,17 @@
     </nav>
     <main class="main-section">
         <div class="header-secondary">
-            <div>
-                <ul class="header-secondary-list">
-                    <li><a href="index.html"> <img src="img/logo1.png" alt="logo" class="logo"> </a></li>
-                    <li> <a href="index.html"> خانه </a></li>
-                    <li> <a href="#"> انواع بیمه نامه</a></li>
-                    <li> <a href="#"> شرکت های بیمه</a></li>
-                    <li> <a href="#"> بلاگ</a></li>
-                </ul>
-            </div>
-            <div style="display: none;">
-                <button class="btn-g draw-border">بیمه های من</button>
-            </div>
+            <a href="#" class="icon" onclick="openNavigation()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="index.html" id="logo-resp"> <img src="img/logo1.png" alt="logo" class="logo" > </a>
+            <ul class="header-secondary-list topnav" id="myTopnav">
+                <li><a href="index.html"> <img src="img/logo1.png" alt="logo" class="logo"> </a></li>
+                <li> <a href="index.html"> خانه </a></li>
+                <li> <a href="#"> انواع بیمه نامه</a></li>
+                <li> <a href="#"> شرکت های بیمه</a></li>
+                <li> <a href="#"> بلاگ</a></li>
+            </ul>
         </div>
         <section class="sec-prev-bime">
             <div class="sec-prev-bime-right">
@@ -109,15 +109,15 @@
                     </form>
                     <div class="prev-bime-car" style="display: none;">
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car" >
-                                <div class="card-pic">
+                            <a  class="selected-car prev-bime-btn" >
+                                <div href="prev-info.html"  class="card-pic">
                                     <img src="img/021-car-17.svg" alt="بیمه زلزله">
                                 </div>
                                 <h3>بیمه دانا</h3>
                             </a>
                         </div>
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car">
+                            <a href="prev-info.html" class="selected-car prev-bime-btn">
                                 <div class="card-pic">
                                     <img src="img/047-cabriolet-1.svg" alt="بیمه عمر">
                                 </div>
@@ -125,7 +125,7 @@
                             </a>
                         </div>
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car">
+                            <a href="prev-info.html" class="selected-car prev-bime-btn">
                                 <div class="card-pic">
                                     <img src="img/Group2407.svg" alt="بیمه مسافرتی">
                                 </div>
@@ -133,7 +133,7 @@
                             </a>
                         </div>
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car">
+                            <a href="prev-info.html" class="selected-car prev-bime-btn">
                                 <div class="card-pic">
                                     <img src="img/021-car-17.svg" alt="بیمه زلزله">
                                 </div>
@@ -141,7 +141,7 @@
                             </a>
                         </div>
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car">
+                            <a href="prev-info.html" class="selected-car prev-bime-btn">
                                 <div class="card-pic">
                                     <img src="img/047-cabriolet-1.svg" alt="بیمه عمر">
                                 </div>
@@ -149,7 +149,7 @@
                             </a>
                         </div>
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car">
+                            <a href="prev-info.html" class="selected-car prev-bime-btn">
                                 <div class="card-pic">
                                     <img src="img/Group2407.svg" alt="بیمه مسافرتی">
                                 </div>
@@ -157,7 +157,7 @@
                             </a>
                         </div>
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car">
+                            <a href="prev-info.html" class="selected-car prev-bime-btn">
                                 <div class="card-pic">
                                     <img src="img/021-car-17.svg" alt="بیمه زلزله">
                                 </div>
@@ -165,7 +165,7 @@
                             </a>
                         </div>
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car">
+                            <a href="prev-info.html" class="selected-car prev-bime-btn">
                                 <div class="card-pic">
                                     <img src="img/047-cabriolet-1.svg" alt="بیمه عمر">
                                 </div>
@@ -173,7 +173,7 @@
                             </a>
                         </div>
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car">
+                            <a href="prev-info.html" class="selected-car prev-bime-btn">
                                 <div class="card-pic">
                                     <img src="img/Group2407.svg" alt="بیمه مسافرتی">
                                 </div>
@@ -181,7 +181,7 @@
                             </a>
                         </div>
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car">
+                            <a href="prev-info.html" class="selected-car prev-bime-btn">
                                 <div class="card-pic">
                                     <img src="img/021-car-17.svg" alt="بیمه زلزله">
                                 </div>
@@ -189,7 +189,7 @@
                             </a>
                         </div>
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car">
+                            <a href="prev-info.html" class="selected-car prev-bime-btn">
                                 <div class="card-pic">
                                     <img src="img/047-cabriolet-1.svg" alt="بیمه عمر">
                                 </div>
@@ -197,7 +197,7 @@
                             </a>
                         </div>
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car">
+                            <a href="prev-info.html" class="selected-car prev-bime-btn">
                                 <div class="card-pic">
                                     <img src="img/Group2407.svg" alt="بیمه مسافرتی">
                                 </div>
@@ -205,7 +205,7 @@
                             </a>
                         </div>
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car">
+                            <a href="prev-info.html" class="selected-car prev-bime-btn">
                                 <div class="card-pic">
                                     <img src="img/021-car-17.svg" alt="بیمه زلزله">
                                 </div>
@@ -213,7 +213,7 @@
                             </a>
                         </div>
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car">
+                            <a href="prev-info.html" class="selected-car prev-bime-btn">
                                 <div class="card-pic">
                                     <img src="img/047-cabriolet-1.svg" alt="بیمه عمر">
                                 </div>
@@ -221,7 +221,7 @@
                             </a>
                         </div>
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car">
+                            <a href="prev-info.html" class="selected-car prev-bime-btn">
                                 <div class="card-pic">
                                     <img src="img/Group2407.svg" alt="بیمه مسافرتی">
                                 </div>
@@ -229,7 +229,7 @@
                             </a>
                         </div>
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car">
+                            <a href="prev-info.html" class="selected-car prev-bime-btn">
                                 <div class="card-pic">
                                     <img src="img/021-car-17.svg" alt="بیمه زلزله">
                                 </div>
@@ -237,7 +237,7 @@
                             </a>
                         </div>
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car">
+                            <a href="prev-info.html" class="selected-car prev-bime-btn">
                                 <div class="card-pic">
                                     <img src="img/047-cabriolet-1.svg" alt="بیمه عمر">
                                 </div>
@@ -245,7 +245,7 @@
                             </a>
                         </div>
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car">
+                            <a href="prev-info.html" class="selected-car prev-bime-btn">
                                 <div class="card-pic">
                                     <img src="img/Group2407.svg" alt="بیمه مسافرتی">
                                 </div>
@@ -253,7 +253,7 @@
                             </a>
                         </div>
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car">
+                            <a href="prev-info.html" class="selected-car prev-bime-btn">
                                 <div class="card-pic">
                                     <img src="img/021-car-17.svg" alt="بیمه زلزله">
                                 </div>
@@ -261,7 +261,7 @@
                             </a>
                         </div>
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car">
+                            <a href="prev-info.html" class="selected-car prev-bime-btn">
                                 <div class="card-pic">
                                     <img src="img/047-cabriolet-1.svg" alt="بیمه عمر">
                                 </div>
@@ -269,7 +269,7 @@
                             </a>
                         </div>
                         <div class="card">
-                            <a href="prev-info.html" class="selected-car">
+                            <a href="prev-info.html" class="selected-car prev-bime-btn">
                                 <div class="card-pic">
                                     <img src="img/Group2407.svg" alt="بیمه مسافرتی">
                                 </div>
@@ -317,9 +317,6 @@
                 </div>
             </div>
         </section>
-
-
-
     </main>
     <footer >
         <div class="footer">
@@ -385,7 +382,7 @@
         </div>
         
     </footer>
-
+    <script src="js/script.js"></script>
     <script>
         function showSection() {
             var item3 = document.querySelector(".radio-input-3").checked;
@@ -400,20 +397,17 @@
             }
         }
 
-
-
+        
         //js for searchbox filter items:
-            document.querySelector("#filter-box").addEventListener("keyup", function(){
-                var search = this.value;
-                var all = document.querySelectorAll(".selected-car h3");
-                for (let i of all) {
-                    let item = i.innerHTML;
-                    if (item.indexOf(search) == -1) { i.parentElement.parentElement.classList.add("hide"); }
-                    else { i.parentElement.parentElement.classList.remove("hide"); }
-                }
-            });
-
-
+        document.querySelector("#filter-box").addEventListener("keyup", function(){
+            var search = this.value;
+            var all = document.querySelectorAll(".selected-car prev-bime-btn h3");
+            for (let i of all) {
+                let item = i.innerHTML;
+                if (item.indexOf(search) == -1) { i.parentElement.parentElement.classList.add("hide"); }
+                else { i.parentElement.parentElement.classList.remove("hide"); }
+            }
+        });
 
         
         //js for selection prev buttons:
@@ -436,15 +430,22 @@
         var Btn4 = document.querySelector('#selected-year-btn');
         Btn4.innerHTML = yearBtnPrev ;
         Btn4.classList.add("selected-item");
-
-
-        // var percentBtn3Prev = sessionStorage.getItem("percentBtn3Content");
-        // var percent4 = document.querySelector('#selection-progress-digit');
-        // percent4.innerHTML = percentBtn3Prev ;
         //end
 
 
 
+
+        //JS FOR SEND PREV-BIME:
+        var prevBimeName = document.getElementsByClassName("prev-bime-btn");
+        for (i = 0; i < prevBimeName.length ; i++) {
+            prevBimeName[i].onclick = function(){
+                var prevbtn5 = prevBimeName[i].children[1].innerText;
+                sessionStorage.setItem("prevBimeContent", prevbtn5);
+                console.log(prevbtn5);
+            }
+        }
+        
+        
         //js for :
         function display() { 
             var selectedRadioInput = document.querySelectorAll('.form__radio-input');

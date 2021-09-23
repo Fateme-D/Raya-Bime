@@ -48,6 +48,9 @@
     padding: .5rem 1.5rem;
     justify-content: space-between;
     align-items: center;
+    @include respond(tab-port) {
+        justify-content: space-around;
+    }
 }
 
 //form style:

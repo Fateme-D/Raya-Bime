@@ -19,7 +19,13 @@
     
     &-right {
         width: 65rem;
-        height: 50rem;
+        min-height: 50rem;
+        height: auto;
+        @include respond(phone) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &-left {
         width: 34rem;
@@ -34,5 +40,15 @@
         @include respond(big-desktop) {
             width: 40rem;
         }
+    }
+}
+@include respond(phone) {
+    .type-bime {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card-home {
+        margin: 1.5rem 2.1rem;
     }
 }

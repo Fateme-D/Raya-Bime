@@ -1,6 +1,5 @@
 .sec-type {
-    @include bime-box;
-    
+    @include bime-box;   
     &-right {
         @include bime-box-right; 
         & p {
@@ -24,9 +23,10 @@
 }
 .car-type {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
 }
-
 
 
 
@@ -85,22 +85,22 @@
         &-cicle {
             font-weight: 500;
             font-size: 2.2rem;
-            border: 3px solid #92c8f7;
+            border: .3rem solid #92c8f7;
             padding: 1rem;
-            width: 105px;
-            height: 105px;
+            width: 10.5rem;
+            height: 10.5rem;
             border-radius: 50%;
             position: relative;
             &-2 {
                 font-weight: 500;
                 font-size: 2.2rem;
                 border: 2px solid #92c8f7;
-                width: 88px;
-                height: 88px;
+                width: 8.8rem;
+                height: 8.8rem;
                 border-radius: 50%;
                 position: absolute;
-                right: 5px;
-                top: 6px;
+                right: .5rem;
+                top: .6rem;
             }
         }
         &-percent {
@@ -108,7 +108,7 @@
             font-weight: 500;
             font-size: 2.2rem;
             text-align: center;
-            margin-top: 26px;
+            margin-top: 2.6rem;
         }
 
     }
@@ -138,9 +138,9 @@
         
         }
     }
-    @include respond(tab-port) {
-        width: 24rem;
-    }
+    // @include respond(tab-port) {
+    //     width: 24rem;
+    // }
     @include respond(phone) { 
         width: 34rem;
         margin: 5rem 0;
@@ -308,9 +308,10 @@
     & > p {
         font-family: $font-family ;
         color: $color-grey-dark-2;
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         margin-bottom: 5rem;
         text-align: justify;
+        line-height: 2;
     }
     &-table {
         width: 60%;

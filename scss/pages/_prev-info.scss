@@ -25,6 +25,7 @@
     &_item {
         width: 25rem;
         margin-bottom: 3rem;
+        direction: rtl;
     }
     &_label {
         font-size: 1.2rem;
@@ -39,6 +40,7 @@
         flex-wrap: wrap;
         padding: .5rem 1.5rem .5rem 0;
         justify-content: space-between;
+        direction: rtl;
         &-group input{
             background-color: $color-white;
             padding: 1rem 1.5rem;
@@ -56,6 +58,17 @@
                 font-weight: 100;
             }
         }
+    }
+    &_main {
+        @include respond(tab-port) {
+            overflow-y: auto;
+            height: 226px;
+            direction: ltr;
+        }
+        @include respond(phone) {
+            height: 138px;
+        }
+       
     }
 }
 

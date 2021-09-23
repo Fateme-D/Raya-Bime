@@ -48,6 +48,9 @@
             font-size: 1.1rem;
             font-weight: 100;
         }
+        @include respond(tab-port) {
+            width: 17rem;
+        }
     }
     & button {
         position: absolute;

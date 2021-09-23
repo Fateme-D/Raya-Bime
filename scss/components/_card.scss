@@ -63,7 +63,7 @@
     border: .1rem solid $color-blue;
     border-radius: 1rem;
     cursor: pointer;
-    margin: .7rem;
+    margin: .7rem 0;
     &:hover { 
         transform: scale(1.03);
         box-shadow: .1rem .1rem .4rem .3rem #cfedfa;
@@ -93,5 +93,8 @@
             right: calc(50% - 2.3rem);
             top: calc(50% - 2rem);
         }
+    }
+    @include respond(phone) {
+        margin: 1rem 2px;
     }
 }

@@ -52,18 +52,17 @@
     </nav>
     <main class="main-section main-section-shopping">
         <div class="header-secondary">
-            <div>
-                <ul class="header-secondary-list">
-                    <li><a href="index.html"> <img src="img/logo1.png" alt="logo" class="logo"> </a></li>
-                    <li> <a href="index.html"> خانه </a></li>
-                    <li> <a href="#"> انواع بیمه نامه</a></li>
-                    <li> <a href="#"> شرکت های بیمه</a></li>
-                    <li> <a href="#"> بلاگ</a></li>
-                </ul>
-            </div>
-            <div style="display: none;">
-                <button class="btn-g draw-border">بیمه های من</button>
-            </div>
+            <a href="#" class="icon" onclick="openNavigation()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="index.html" id="logo-resp"> <img src="img/logo1.png" alt="logo" class="logo" > </a>
+            <ul class="header-secondary-list topnav" id="myTopnav">
+                <li><a href="index.html"> <img src="img/logo1.png" alt="logo" class="logo"> </a></li>
+                <li> <a href="index.html"> خانه </a></li>
+                <li> <a href="#"> انواع بیمه نامه</a></li>
+                <li> <a href="#"> شرکت های بیمه</a></li>
+                <li> <a href="#"> بلاگ</a></li>
+            </ul>
         </div>
         <section class="shop_sec">
             <div class="wrapper_tab">
@@ -94,10 +93,10 @@
                     <div class="selected-items">
                         <span class="selected-bime">بیمه شخص ثالث</span>
                         <ul class="selected-items-list">
-                            <li id="selected-type-btn" class="selected-btn">سواری  </li>
-                            <li id="selected-brand-btn" class="selected-btn">سواری  </li>
-                            <li id="selected-model-btn"  class="selected-btn">سواری  </li>
-                            <li id="selected-year-btn" class="selected-btn">سواری  </li>
+                            <li class="selected-btn selected-type-btn" >سواری  </li>
+                            <li class="selected-btn selected-brand-btn" >سواری  </li>
+                            <li class="selected-btn selected-model-btn" >سواری  </li>
+                            <li class="selected-btn selected-year-btn" >سواری  </li>
                         </ul>
                     </div>
                     <button class="brown-btn"> مشاهده همه مشخصات </button>
@@ -454,23 +453,23 @@
                     </div>
                     <div class="row-items">
                         <span>نوع وسیله نقلیه</span>
-                        <span id="selected-type-btn">سواری</span>
+                        <span class="selected-type-btn">سواری</span>
                     </div>
                     <div class="row-items">
                         <span>مدل خودرو</span>
-                        <span id="selected-brand-btn">نوع 1</span>
+                        <span class="selected-brand-btn">نوع 1</span>
                     </div>
                     <div class="row-items">
                         <span>سال ساخت</span>
-                        <span id="selected-model-btn">1400</span>
+                        <span class="selected-model-btn">1400</span>
                     </div>
                     <div class="row-items">
                         <span>شرکت بیمه گر قبلی</span>
-                        <span>فاقد بیمه نامه</span>
+                        <span class="selected-prevbime-btn">فاقد بیمه نامه</span>
                     </div>
                     <div class="row-items">
                         <span>سطح پوشش</span>
-                        <span>16,000,000 تومان</span>
+                        <span class="selected-prevprice-btn">16 میلیون</span>
                     </div>
                     <div class="selection-pagination row-items">
                         <button> <span>&#10094;  </span>  <a href="#"> مرحله قبل </a> </button>
@@ -538,7 +537,7 @@
                         </div>
                         <div class="tab3-row-items-2">
                             <span>سطح پوشش </span>
-                            <span id="selected-model-btn">16,000,000  تومان</span>
+                            <span class="selected-prevprice-btn"> 16 میلیون</span>
                         </div>
                         <div class="tab3-row-items-2">
                             <span>مدت بیمه</span>
@@ -554,23 +553,23 @@
                         </div>
                         <div class="tab3-row-items-2">
                             <span>نوع وسیله نقلیه</span>
-                            <span id="selected-type-btn">سواری</span>
+                            <span class="selected-type-btn">سواری</span>
                         </div>
                         <div class="tab3-row-items-2">
                             <span>مدل خودرو</span>
-                            <span id="selected-brand-btn">نوع 1</span>
+                            <span class="selected-brand-btn">نوع 1</span>
                         </div>
                         <div class="tab3-row-items-2">
                             <span>سال ساخت</span>
-                            <span id="selected-model-btn">1400</span>
+                            <span class="selected-model-btn">1400</span>
                         </div>
                         <div class="tab3-row-items-2">
                             <span>شرکت بیمه گر قبلی</span>
-                            <span>فاقد بیمه نامه</span>
+                            <span class="selected-prevbime-btn">فاقد بیمه نامه</span>
                         </div>
                         <div class="tab3-row-items-2">
                             <span>سطح پوشش</span>
-                            <span>16,000,000 تومان</span>
+                            <span class="selected-prevprice-btn">16 میلیون</span>
                         </div>
                     </div>
                    
@@ -594,15 +593,15 @@
                     </div>
                     <div>
                         <span class="text-h3">نام مشتری:</span>
-                        <span class="text-h4"> نام تحویل گیرنده </span>
+                        <span class="text-h4 selected-name-btn"> نام تحویل گیرنده </span>
                     </div>
                     <div>
                         <span class="text-h3">آدرس تحویل گیرنده:</span>
-                        <span class="text-h4">لورم ایپسوم علاوه بر تولید متن ساختگی لورم ایپسوم، انواع ابزارهای آنلاین </span>
+                        <span class="text-h4 selected-address-btn">لورم ایپسوم علاوه بر تولید متن ساختگی لورم ایپسوم، انواع ابزارهای آنلاین </span>
                     </div>
                     <div>
                         <span class="text-h3">شماره همراه:</span>
-                        <span class="text-h4">  09213456789</span>
+                        <span class="text-h4 selected-phonenumber-btn">  09213456789</span>
                     </div>
                     <div class="h2-text">درگاه بانکی خود را انتخاب کنید</div>
                     <div class="dargah-box">
@@ -642,7 +641,7 @@
                         </div>
                         <div class="tab3-row-items-2">
                             <span>سطح پوشش </span>
-                            <span id="selected-model-btn">16,000,000  تومان</span>
+                            <span class="selected-prevprice-btn">16 میلیون</span>
                         </div>
                         <div class="tab3-row-items-2">
                             <span>مدت بیمه</span>
@@ -652,29 +651,29 @@
     
     
     
-                        <div >
+                        <div>
                             <p class="h2-text">مشخصات خرید</p>
                             <hr class="gray-line">
                         </div>
                         <div class="tab3-row-items-2">
                             <span>نوع وسیله نقلیه</span>
-                            <span id="selected-type-btn">سواری</span>
+                            <span class="selected-type-btn">سواری</span>
                         </div>
                         <div class="tab3-row-items-2">
                             <span>مدل خودرو</span>
-                            <span id="selected-brand-btn">نوع 1</span>
+                            <span class="selected-brand-btn">نوع 1</span>
                         </div>
                         <div class="tab3-row-items-2">
                             <span>سال ساخت</span>
-                            <span id="selected-model-btn">1400</span>
+                            <span class="selected-model-btn">1400</span>
                         </div>
                         <div class="tab3-row-items-2">
                             <span>شرکت بیمه گر قبلی</span>
-                            <span>فاقد بیمه نامه</span>
+                            <span class="selected-prevbime-btn">فاقد بیمه نامه</span>
                         </div>
                         <div class="tab3-row-items-2">
                             <span>سطح پوشش</span>
-                            <span>16,000,000 تومان</span>
+                            <span class="selected-prevprice-btn">16 میلیون</span>
                         </div>
                     </div>
 
@@ -750,25 +749,40 @@
         </div>
         
     </footer>
-    <script>
     
+    <script src="js/script.js"></script>
+    <script>
         //js for selection prev buttons:
         var typeBtnPrev = sessionStorage.getItem("typeBtnContent");
-        var Btn1 = document.querySelector('#selected-type-btn');
-        Btn1.innerHTML = typeBtnPrev ;
+        var Btns1 = document.getElementsByClassName('selected-type-btn');
+        for( let x in Btns1) {
+            Btns1[x].innerHTML = typeBtnPrev ;
+        }
 
         var brandBtnPrev = sessionStorage.getItem("brandBtnContent");
-        var Btn2 = document.querySelector('#selected-brand-btn');
-        Btn2.innerHTML = brandBtnPrev ;
+        var Btns2 = document.getElementsByClassName('selected-brand-btn');
+        for( let x in Btns2) {
+            Btns2[x].innerHTML = brandBtnPrev ;
+        }
 
         var modelBtnPrev = sessionStorage.getItem("modelBtnContent");
-        var Btn3 = document.querySelector('#selected-model-btn');
-        Btn3.innerHTML = modelBtnPrev ;
+        var Btns3 = document.getElementsByClassName('selected-model-btn');
+        for( let x in Btns3) {
+            Btns3[x].innerHTML = modelBtnPrev ;
+        }
 
         var yearBtnPrev = sessionStorage.getItem("yearBtnContent");
-        var Btn4 = document.querySelector('#selected-year-btn');
-        Btn4.innerHTML = yearBtnPrev ;
-        //end
+        var Btns4 = document.getElementsByClassName('selected-year-btn');
+        for( let x in Btns4) {
+            Btns4[x].innerHTML = yearBtnPrev ;
+        }
+
+        var prevBimeBtnPrev = sessionStorage.getItem("prevBimeContent");
+        var Btns5 = document.getElementsByClassName('selected-prevbime-btn');
+        for( let x in Btns5) {
+            Btns5[x].innerHTML = prevBimeBtnPrev ;
+        }
+        //end 
 
 
         // js for collapse section:
@@ -816,37 +830,6 @@
         });
 
 
-
-
-        //open tab 2:
-        // function openTab2(){
-        //     document.querySelector('.tab1-content').style.display = 'none';
-        //     document.querySelector('.tab2-content').style.display = 'flex';
-        //     document.querySelector('.off-code').style.display = 'none';
-        //     document.querySelector('#tab1').classList.add('shop-tab-deactive') ;
-        //     document.querySelector('#tab2').classList.add('shop-tab-link-active') ;
-        //     document.querySelector('#tab1 > p').classList.add('tab-link-deactive') ;
-        //     document.querySelector('#tab2 > p').classList.add('tab-link-num-active') ;
-        // }
-       //open tab 3:
-        // function openTab3(){
-        //     document.querySelector('#tab2-content').style.display = 'none';
-        //     document.querySelector('#tab3-content').style.display = 'flex';
-        //     document.querySelector('#tab2').classList.add('shop-tab-deactive') ;
-        //     document.querySelector('#tab3').classList.add('shop-tab-link-active') ;
-        //     document.querySelector('#tab2 > p').classList.add('tab-link-deactive') ;
-        //     document.querySelector('#tab3 > p').classList.add('tab-link-num-active') ;
-        // }
-        //open tab 4:
-        // function openTab4(){
-        //     document.querySelector('#tab3-content').style.display = 'none';
-        //     document.querySelector('#tab4-content').style.display = 'flex';s
-        //     document.querySelector('#tab3').classList.add('shop-tab-deactive') ;
-        //     document.querySelector('#tab4').classList.add('shop-tab-link-active') ;
-        //     document.querySelector('#tab3 > p').classList.add('tab-link-deactive') ;
-        //     document.querySelector('#tab4 > p').classList.add('tab-link-num-active') ;
-        // }
-        
         //open all tabs:
         function openTab(curTabContent , nextTabContent , curTab, nextTab) {
             document.querySelector('.off-code').style.display = 'none';
@@ -923,6 +906,48 @@
             }
         }
 
+
+
+        //js for send sathpoosheshh value to other tabs:
+        var selectedPrice = document.querySelector('.price-box-list');
+        selectedPrice.addEventListener( 'change' , function() {
+            let price = document.querySelector('.price-box-list').value;
+            var Btns6 = document.getElementsByClassName('selected-prevprice-btn');
+            for( let x in Btns6) {
+                Btns6[x].innerHTML = price + '' + 'میلیون';
+            }
+        });
+
+
+
+        //js for send phonenumber value to Tab4:
+        var selectedNum = document.querySelector('#phonenumber');
+        selectedNum.addEventListener( 'change' , function() {
+            let phonenumber7 = this.value;
+            var Btns7 = document.getElementsByClassName('selected-phonenumber-btn');
+            for( let x in Btns7) {
+                Btns7[x].innerHTML = phonenumber7;
+            }
+        });
+
+        var selectedName = document.querySelector('#name');
+        selectedName.addEventListener( 'change' , function() {
+            let name8 = this.value;
+            var Btns8 = document.getElementsByClassName('selected-name-btn');
+            for( let x in Btns8) {
+                Btns8[x].innerHTML = name8;
+            }
+        });
+
+        var selectedAddres = document.querySelector('#address');
+        selectedAddres.addEventListener( 'change' , function() {
+            let address9 = this.value;
+            var Btns9 = document.getElementsByClassName('selected-address-btn');
+            for( let x in Btns9) {
+                Btns9[x].innerHTML = address9;
+            }
+        });
+        //end
     </script>
 </body>
 </html>

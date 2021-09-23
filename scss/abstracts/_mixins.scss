@@ -29,7 +29,10 @@
     @include respond(tab-port) {
         padding: 1rem 1.5rem;
         margin-left: 2rem;
-        width: 57rem;
+        width: 45rem;
+    }
+    @include respond(phone) {
+        width: 53rem;
     }
 }
 

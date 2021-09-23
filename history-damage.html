@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.min.css">
-    <title>  بیمه شخص ثالث برند</title>
+    <title>بیمه شخص ثالث</title>
 </head> 
 <body>
     <header >
@@ -51,18 +52,17 @@
     </nav>
     <main class="main-section">
         <div class="header-secondary">
-            <div>
-                <ul class="header-secondary-list">
-                    <li><a href="index.html"> <img src="img/logo1.png" alt="logo" class="logo"> </a></li>
-                    <li> <a href="index.html"> خانه </a></li>
-                    <li> <a href="#"> انواع بیمه نامه</a></li>
-                    <li> <a href="#"> شرکت های بیمه</a></li>
-                    <li> <a href="#"> بلاگ</a></li>
-                </ul>
-            </div>
-            <div style="display: none;">
-                <button class="btn-g draw-border">بیمه های من</button>
-            </div>
+            <a href="#" class="icon" onclick="openNavigation()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="index.html" id="logo-resp"> <img src="img/logo1.png" alt="logo" class="logo" > </a>
+            <ul class="header-secondary-list topnav" id="myTopnav">
+                <li><a href="index.html"> <img src="img/logo1.png" alt="logo" class="logo"> </a></li>
+                <li> <a href="index.html"> خانه </a></li>
+                <li> <a href="#"> انواع بیمه نامه</a></li>
+                <li> <a href="#"> شرکت های بیمه</a></li>
+                <li> <a href="#"> بلاگ</a></li>
+            </ul>
         </div>
         <section class="sec-history-damage">
             <div class="sec-history-damage-right">
@@ -148,11 +148,9 @@
                 </div>
                 <div class="selection-pagination">
                     <button class="prev-btn"> <span>&#10094;  </span>  <a href="prev-info.html"> مرحله قبل </a> </button>
-                    <button class="next-btn" > <a href="shopping.html"> مرحله بعد</a> <span> &#10095;</span> </button>
-                    
+                    <button class="next-btn" > <a href="shopping.html" > مرحله بعد</a> <span> &#10095;</span> </button>
                 </div>
             </div>
-
         </section>
     </main>
     <footer >
@@ -219,50 +217,9 @@
         </div>
         
     </footer>
-
+    
+    <script src="js/script.js"></script>
     <script>
-        function showOffSec() {
-            var item = document.querySelector(".radio-input-sec").checked;
-            var sec = document.querySelector(".history-damage_off");
-            if (item) {
-                sec.style.display = "flex" ;
-            }else {
-                sec.style.display = "none" ;
-            }
-        }
-        
-        var nextBtn = document.querySelector(".next-btn");
-        nextBtn.addEventListener( "click", function(){
-            var sec1 = document.querySelector(".sec-history-damage-right");
-            var sec2 = document.querySelector(".selection");
-            var imgp = document.querySelector(".progress-bar1");
-            var h2sec = document.querySelector(".selection-h2");
-            var btnP = document.querySelector(".selection-pagination");
-            var btnSec = document.querySelectorAll(".selection-btn");
-            
-
-            sec1.classList.add("hide-sec");
-            btnP.classList.add("hide-sec");
-            btnSec[0].classList.add("hide-sec");
-            btnSec[1].classList.add("hide-sec");
-            h2sec.innerHTML = "درحال استعلام قیمت";
-            
-            setTimeout(function(){
-                sec1.style.display = "none" ;
-                btnP.style.display = "none" ;
-                btnSec[0].style.display = "none" ;
-                btnSec[1].style.display = "none" ;
-            }, 2000);
-
-            setTimeout(function(){
-                sec2.classList.add("inquiry");
-                imgp.classList.add("progress-bar-2");
-                h2sec.style.fontSize = "21px" ;
-            }, 1000);
-             
-            
-        });
-
         //js for selection prev buttons:
         var typeBtnPrev = sessionStorage.getItem("typeBtnContent");
         var Btn1 = document.querySelector('#selected-type-btn');
@@ -284,6 +241,43 @@
         Btn4.innerHTML = yearBtnPrev ;
         Btn4.classList.add("selected-item");
         //end
+
+        function showOffSec() {
+            var item = document.querySelector(".radio-input-sec").checked;
+            var sec = document.querySelector(".history-damage_off");
+            if (item) {
+                sec.style.display = "flex" ;
+            } else {
+                sec.style.display = "none" ;
+            }
+        }
+        
+
+        //js For 100% animation:
+        // var nextBtn = document.querySelector(".next-btn");
+        // nextBtn.addEventListener( "click", function(){
+        //     var sec1 = document.querySelector(".sec-history-damage-right");
+        //     var sec2 = document.querySelector(".selection");
+        //     var imgp = document.querySelector(".progress-bar1");
+        //     var h2sec = document.querySelector(".selection-h2");
+        //     var btnP = document.querySelector(".selection-pagination");
+        //     var btnSec = document.querySelectorAll(".selection-btn");
+        //     document.querySelector('#selection-progress-digit').innerHTML = "100";
+
+        //     h2sec.innerHTML = "درحال استعلام قیمت";
+        //     sec1.style.display = "none" ;
+        //     btnP.style.display = "none" ;
+        //     btnSec[0].style.display = "none" ;
+        //     btnSec[1].style.display = "none" ;
+
+        //     sec2.classList.add("inquiry");
+        //     imgp.classList.add("progress-bar-2");
+        //     h2sec.style.fontSize = "25px" ;
+
+        //     setTimeout(function(){
+        //         window.open('');
+        //     }, 1000);
+        // });
     </script>
 </body>
 </html>

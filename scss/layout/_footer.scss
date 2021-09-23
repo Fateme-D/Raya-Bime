@@ -85,8 +85,9 @@ footer {
 .logo{
     width: 15rem;
     height: auto;
+    list-style-type: none;
     @include respond(tab-port) { 
-        width: 10rem;
+        width: 12rem;
     }
 }
 

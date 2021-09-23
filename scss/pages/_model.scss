@@ -22,7 +22,9 @@
     display: flex;
     justify-content: space-around;
     align-items: stretch;
-
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
     &-group {
         display: flex;
         flex-direction: column;

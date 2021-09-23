@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.min.css">
     <title>بیمه شخص ثالث</title>
+    <style>
+        .card { margin: .7rem;}
+    </style>
 </head>
 <body>
     <div class="container">
@@ -52,89 +56,80 @@
         </nav>
         <main class="main-section">
             <div class="header-secondary">
-                <div>
-                    <ul class="header-secondary-list">
-                        <li><a href="index.html"> <img src="img/logo1.png" alt="logo" class="logo"> </a></li>
-                        <li> <a href="index.html"> خانه </a></li>
-                        <li> <a href="#"> انواع بیمه نامه</a></li>
-                        <li> <a href="#"> شرکت های بیمه</a></li>
-                        <li> <a href="#"> بلاگ</a></li>
-                    </ul>
-                </div>
-                <div style="display: none;">
-                    <button class="btn-g draw-border">بیمه های من</button>
-                </div>
+                <a href="#" class="icon" onclick="openNavigation()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="index.html" id="logo-resp"> <img src="img/logo1.png" alt="logo" class="logo" > </a>
+                <ul class="header-secondary-list topnav" id="myTopnav">
+                    <li><a href="index.html"> <img src="img/logo1.png" alt="logo" class="logo"> </a></li>
+                    <li> <a href="index.html"> خانه </a></li>
+                    <li> <a href="#"> انواع بیمه نامه</a></li>
+                    <li> <a href="#"> شرکت های بیمه</a></li>
+                    <li> <a href="#"> بلاگ</a></li>
+                </ul>
             </div>
             <section class="sec-type">
                 <div class="sec-type-right">
                     <h2 class="heading-primary">نوع وسیله خود را انتخاب کنید</h2>
                     <div class="car-type">
-                        <div >
-                            <div class="card">
-                                <a href="brand.html" class="selected-car"  >
-                                    <div class="card-pic">
-                                        <img src="img/021-car-17.svg" alt="بیمه زلزله">
-                                    </div>
-                                    <h3 >سواری </h3>
-                                </a>
-                            </div>
-                            <div class="card">
-                                <a href="brand.html" class="selected-car"  >
-                                    <div class="card-pic">
-                                        <img src="img/047-cabriolet-1.svg" alt="بیمه عمر">
-                                    </div>
-                                    <h3> وانت</h3>
-                                </a>
-                            </div>
-                            <div class="card">
-                                <a href="brand.html" class="selected-car" >
-                                    <div class="card-pic">
-                                        <img src="img/Group2407.svg" alt="بیمه مسافرتی">
-                                    </div>
-                                    <h3>تاکسی درون شهری</h3>
-                                </a>
-                            </div>
-                            <div class="card">
-                                <a href="brand.html" class="selected-car" >
-                                    <div class="card-pic">
-                                        <img src="img/Group2408.svg" alt="بیمه سازمانی">
-                                    </div>
-                                    <h3>تاکسی برون شهری</h3>
-                                </a>
-                            </div>
+                        <div class="card">
+                            <a href="brand.html" class="selected-car"  >
+                                <div class="card-pic">
+                                    <img src="img/021-car-17.svg" alt="بیمه زلزله">
+                                </div>
+                                <h3 >سواری </h3>
+                            </a>
                         </div>
-                        
-                        <div>
-                            <div class="card">
-                                <a href="brand.html" class="selected-car"  >
-                                    <div class="card-pic">
-                                        <img src="img/084-car-5.svg" alt="بیمه سازمانی">
-                                    </div>
-                                    <h3>ون </h3>
-                                </a>
-                            </div>
-    
-                            <div class="card">
-                                <a href="brand.html" class="selected-car" >
-                                    <div class="card-pic">
-                                        <img src="img/037-delivery-truck-9.svg" alt="بیمه سازمانی">
-                                    </div>
-                                    <h3>کامیون</h3>
-                                </a>
-                            </div>
-    
-                            <div class="card">
-                                <a href="brand.html" class="selected-car" >
-                                    <div class="card-pic">
-                                        <img src="img/Group2201.svg" alt="بیمه سازمانی">
-                                    </div>
-                                    <h3>کامیونت</h3>
-                                </a>
-                            </div>
+                        <div class="card">
+                            <a href="brand.html" class="selected-car"  >
+                                <div class="card-pic">
+                                    <img src="img/047-cabriolet-1.svg" alt="بیمه عمر">
+                                </div>
+                                <h3> وانت</h3>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="brand.html" class="selected-car" >
+                                <div class="card-pic">
+                                    <img src="img/Group2407.svg" alt="بیمه مسافرتی">
+                                </div>
+                                <h3>تاکسی درون شهری</h3>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="brand.html" class="selected-car" >
+                                <div class="card-pic">
+                                    <img src="img/Group2408.svg" alt="بیمه سازمانی">
+                                </div>
+                                <h3>تاکسی برون شهری</h3>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="brand.html" class="selected-car"  >
+                                <div class="card-pic">
+                                    <img src="img/084-car-5.svg" alt="بیمه سازمانی">
+                                </div>
+                                <h3>ون </h3>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="brand.html" class="selected-car" >
+                                <div class="card-pic">
+                                    <img src="img/037-delivery-truck-9.svg" alt="بیمه سازمانی">
+                                </div>
+                                <h3>کامیون</h3>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="brand.html" class="selected-car" >
+                                <div class="card-pic">
+                                    <img src="img/Group2201.svg" alt="بیمه سازمانی">
+                                </div>
+                                <h3>کامیونت</h3>
+                            </a>
                         </div>
                     </div>
                     <p> اگر خرید خود را تا ساعت 21 در روزهای عادی و روزهای پنجشنبه انجام دهید بیمه نامه همان روز صادر می شود</p>
-    
                 </div>
                 <div class="selection" > 
                     <div class="selection-img">
@@ -463,19 +458,18 @@
         </footer>
     </div>
    
-
-   
+    <script src="js/script.js"></script>
     <script>
         // js for tab Selection
         function openCity(evt, tabItem) {
             var i, tabcontent, tablinks;
             tabcontent = document.querySelectorAll(".tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
+            for (var item of tabcontent) {
+                item.style.display = "none";
             }
             tablinks = document.querySelectorAll(".tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace("active-btn", "");
+            for (var item of tablinks) {
+                item.className = item.className.replace("active-btn", "");
             }
             document.getElementById(tabItem).style.display = "block";
             evt.currentTarget.className += " active-btn";
@@ -484,15 +478,13 @@
 
         // js for collapse section
         var coll = document.querySelectorAll(".about2-right-Collapse");
-        var i;
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
+        for (var item of coll) {
+            item.addEventListener("click", function() {
                 this.classList.toggle("active");
                 var content = this.nextElementSibling;
                 content.classList.toggle("active-content-p");
             });
         }
-
 
 
         //js for selection button:
